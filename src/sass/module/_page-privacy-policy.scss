@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.page-privacy-policy {
+
+}
+
+.page-privacy-policy__inner {
+  max-width: rem(600);
+  @include mq('md') {
+    max-width: rem(848);
+  }
+}
+
+.page-privacy-policy__header {
+  margin-bottom: rem(32);
+}
+
+.page-privacy-policy__title {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(24);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4583;
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: 1.4735;
+  }
+}
+
+.page-privacy-policy__lead {
+  margin-top: rem(32);
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-privacy-policy__text {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-privacy-policy__container {
+  margin-top: rem(32);
+}
+
+.page-privacy-policy__contents ol {
+  padding-left: rem(24);
+  list-style-type: decimal;
+  list-style-position: outside;
+  line-break: strict;
+  color: $font;
+}
+
+.page-privacy-policy__contents p {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-privacy-policy__footer {
+  margin-top: rem(32);
+}

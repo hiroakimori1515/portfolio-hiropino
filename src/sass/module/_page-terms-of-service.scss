@@ -1,0 +1,69 @@
+@use 'global' as *;
+
+.page-terms-of-service {
+
+}
+
+.page-terms-of-service__inner {
+  max-width: rem(600);
+  @include mq('md') {
+    max-width: rem(848);
+  }
+}
+
+.page-terms-of-service__header {
+  margin-bottom: rem(32);
+}
+
+.page-terms-of-service__title {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(24);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4583;
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: 1.4735;
+  }
+}
+
+.page-terms-of-service__lead {
+  margin-top: rem(32);
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-terms-of-service__contents ol {
+  padding-left: rem(22);
+  list-style-type: decimal;
+  list-style-position: outside;
+  line-break: strict;
+  color: $font;
+}
+
+.page-terms-of-service__contents p {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-terms-of-service__text {
+  color: $font;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: $normal;
+  line-height: 2;
+}
+
+.page-terms-of-service__footer {
+  margin-top: rem(32);
+}

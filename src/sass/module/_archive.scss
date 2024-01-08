@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.archive {
+
+}
+
+.archive__menu {
+
+}
+
+.archive__year {
+  position: relative;
+  padding-left: rem(32);
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: normal;
+  line-height: normal;
+  color: $main;
+  transition: .3s;
+}
+
+.archive__year:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.archive__year::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: rem(24);
+  height: rem(24);
+  background-image: url(../images/common/Polygon-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s;
+}
+
+.archive__year.is-active::before {
+  background-image: url(../images/common/Polygon-under.png);
+  transition: .3s;
+}
+
+.archive__lists {
+
+}
+
+.archive__list {
+
+}
+
+.archive__list-item {
+  position: relative;
+  margin-top: rem(4);
+  padding-left: rem(56);
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: normal;
+  line-height: normal;
+  color: $main;
+  transition: .3s;
+  list-style: none;
+}
+
+.archive__list-item:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.archive__list-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(24);
+  width: rem(24);
+  height: rem(24);
+  background-image: url(../images/common/Polygon-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s;
+}

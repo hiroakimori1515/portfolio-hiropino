@@ -1,0 +1,95 @@
+@use "global" as *;
+
+.single {
+
+}
+
+.single__date {
+  font-family: $third-font-family;
+  font-size: rem(14);
+  font-weight: normal;
+  line-height: 1.286;
+  color: $font;
+}
+
+.single__title {
+  margin-top: rem(8);
+  font-family: $base-font-family;
+  font-size: rem(24);
+  font-weight: 500;
+  line-height: normal;
+  color: $font;
+  border-bottom: 1px solid $main;
+  @include mq('md') {
+    font-size: rem(32);
+  }
+}
+
+.single__image {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(32);
+  }
+}
+
+.single__image img {
+  aspect-ratio: 345 / 231;
+  object-fit: cover;
+  height: auto;
+  @include mq('md') {
+    aspect-ratio: 700 / 468;
+  }
+}
+
+.single__content img {
+  margin-top: rem(24);
+  aspect-ratio: 345 / 231;
+  object-fit: cover;
+  height: auto;
+  @include mq('md') {
+    margin-top: rem(32);
+    aspect-ratio: 700 / 468;
+  }
+}
+
+.single__content p {
+  margin-top: rem(24);
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: normal;
+  line-height: 1.5;
+  color: black;
+  @include mq('md') {
+    margin-top: rem(48);
+  }
+}
+
+.single__content ul {
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(32);
+  }
+}
+
+.single__content li {
+  padding-left: rem(27);
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: normal;
+  line-height: 1.5;
+  color: black;
+  position: relative;
+}
+
+.single__content li::before {
+  content: "";
+  position: absolute;
+  top: rem(4);
+  left: 0;
+  width: rem(18);
+  height: rem(18);
+  background-image: url(../images/common/hitode-single.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

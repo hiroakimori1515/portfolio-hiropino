@@ -1,0 +1,79 @@
+@use 'global' as *;
+
+.pc-nav {
+
+}
+
+.pc-nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.pc-nav__items li a {
+  position: relative;
+}
+
+.pc-nav__items li.pc-nav__item a,
+.pc-nav__items li a:hover {
+  color: $base;
+}
+
+.pc-nav__items li a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: rem(16);
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 1px;
+  background: $base;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+// .pc-nav__items li.pc-nav__item a::after,
+.pc-nav__items li a:hover::after {
+  transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+.pc-nav__item,
+.pc-nav__item a {
+  height: inherit;
+}
+
+.pc-nav__item a {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 0 min(1.4vw, rem(20));
+  width: 100%;
+  font-size: rem(18);
+  font-weight: normal;
+  font-family: $second-font-family;
+  line-height: 1;
+  color: $base;
+}
+
+// .pc-nav__item-entitle {
+//   // font-size: rem(18);
+//   // font-weight: normal;
+//   // font-family: $second-font-family;
+//   // line-height: 1;
+//   // color: $base;
+//   // position: relative;
+// }
+
+.pc-nav__item-jatitle {
+  font-size: rem(10);
+  font-weight: normal;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  color: $base;
+}
