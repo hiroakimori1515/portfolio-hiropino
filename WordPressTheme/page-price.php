@@ -45,7 +45,7 @@
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
                 </div>
-                <h3 id="page-price2" class="page-price__item-title">体験ダイビング</h3>
+                <h3 class="page-price__item-title">体験ダイビング</h3>
               </div>
               <dl class="page-price__course">
               <?php
@@ -64,7 +64,7 @@
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
                 </div>
-                <h3 id="page-price3" class="page-price__item-title">ファンダイビング</h3>
+                <h3 class="page-price__item-title">ファンダイビング</h3>
               </div>
               <dl class="page-price__course">
               <?php

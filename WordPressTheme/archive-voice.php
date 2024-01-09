@@ -57,11 +57,12 @@
                           echo $tag->name;
                         }
                       ?></div>
-                        <?php 
+                        <?php
                         $category = get_the_category();
-                        if($category[0]) : ?>
-                        <div class="voice-card__category"><?php echo $category[0]->cat_name; ?></div>
-                        <?php endif ?>
+                        if (!empty($category) && isset($category[0])) :
+                            ?>
+                            <div class="voice-card__category"><?php echo esc_html($category[0]->cat_name); ?></div>
+                        <?php endif; ?>
                       </div>
                       <div class="voice-card__heading">
                         <h3 class="voice-card__title"><?php the_title(); ?></h3>

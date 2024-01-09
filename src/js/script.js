@@ -67,27 +67,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ヘッダーの高さ分下に下げてスクロール
-  jQuery(document).ready(function () {
-    $('a[href^="#"]').click(function () {
-      var headerHeight = $(".header").innerHeight();
-      var speed = 300;
-      var id = $(this).attr("href");
-      var target = id === "#" ? "html" : $(id);
-    
-      if (target.length) {
-        var position = target.offset().top - headerHeight;
-    
-        $("html, body").animate({
-          scrollTop: position
-        }, speed);
-      }
-    
-      return false;
-    });
+  $('a[href^="#"]').click( function () {
+
+    var headerHeight = $(".header").height();
+    console.log(headerHeight);
+    var speed = 300;
+    var id = $(this).attr("href");
+    var target = id === "#" ? "html" : $(id);
+
+    if (target.length) {
+      var position = target.offset().top - headerHeight;
+
+      $("html, body").animate({
+        scrollTop: position
+      }, speed);
+    }
   });
   
-  
-
   var swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     loopedSlides: 4,
