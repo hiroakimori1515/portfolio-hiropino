@@ -21,7 +21,7 @@
       <div class="page-price__inner inner">
         <div class="page-price__contents">
           <ul class="page-price__items">
-            <li id="price1" class="page-price__item">
+            <li data-id="#price1" id="price1" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
@@ -40,7 +40,7 @@
               <?php } ?>
               </dl>
             </li>
-            <li id="price2" class="page-price__item">
+            <li data-id="#price2" id="price2" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
@@ -59,7 +59,7 @@
               <?php } ?>
               </dl>
             </li>
-            <li id="price3" class="page-price__item">
+            <li data-id="#price3" id="price3" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
@@ -78,7 +78,7 @@
               <?php } ?>
               </dl>
             </li>
-            <li id="price4" class="page-price__item">
+            <li data-id="#price4" id="price4" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
                   <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">

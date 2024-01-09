@@ -89,9 +89,9 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           <li class="footer-nav__item">
             <a href="<?php echo esc_url( home_url( '/price/' ) );?>">料金一覧</a>
             <ul>
-              <li><a href="<?php echo esc_url( home_url( '/price#price1' ) );?>">ライセンス講習</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/price#price2' ) );?>">体験ダイビング</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/price#price3' ) );?>">ファンダイビング</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price1' ) );?>">ライセンス講習</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price2' ) );?>">体験ダイビング</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price3' ) );?>">ファンダイビング</a></li>
             </ul>
           </li>
           <li class="footer-nav__item">
