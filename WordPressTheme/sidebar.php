@@ -29,7 +29,7 @@
                   <?php endif; ?>
                 </div>
                 <div class="popular-posts-card__body">
-                  <time class="popular-posts-card__date" datetime="2023.11/17"><?php the_date(); ?></time>
+                  <time class="popular-posts-card__date" datetime="<?php the_time("c"); ?>"><?php the_time("Y.m.d"); ?></time>
                   <h4 class="popular-posts-card__title"><?php the_title(); ?></h4>
                 </div>
               </div>
@@ -150,7 +150,7 @@
               <ul class="archive__list">
               <?php $first = false; // 最初の要素が表示されたのでフラグを false に設定
                             endif;?>
-                <li class="archive__list-item"><a href="<?php echo esc_url( home_url( '/blog/' ) ) ; ?>/<?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)); ?>"><?php echo date("n", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>月(<?php echo $month->post_count; ?>)</a></li>
+                <li class="archive__list-item"><a href="<?php echo esc_url( home_url( '/' ) ) ; ?><?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)); ?>"><?php echo date("n", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>月</a></li>
               </ul>
               <?php $year_prev = $year_current; endforeach;?>
             </dd>

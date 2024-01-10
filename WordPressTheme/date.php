@@ -15,7 +15,6 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-
   <main>
     <article class="common-column layout-page-common">
       <div class="common-column__inner inner">
