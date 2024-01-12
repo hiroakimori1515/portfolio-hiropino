@@ -64,11 +64,13 @@
                   </div>
                   <div class="campaign-card__inner">
                     <div class="campaign-card__head">
-                    <?php 
-                    $category = get_the_category();
-                    if($category[0]) : ?>
-                      <p class="campaign-card__category"><?php echo $category[0]->cat_name; ?></p>
-                      <?php endif ?>
+                    <?php
+                    $terms = get_the_terms(get_the_ID(), 'campaign_category');
+                    if ($terms && !is_wp_error($terms)) {
+                        $term = reset($terms); // 最初のタームを取得
+                        echo '<p class="campaign-card__category">' . esc_html($term->name) . '</p>';
+                    }
+                    ?>
                       <h3 class="campaign-card__title"><?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;>">(本キャンペーンは終了しました）</span>';} ?></h3>
                     </div>
                     <div class="campaign-card__body">
@@ -232,11 +234,12 @@
                         ?>
                       </div>
                       <?php
-                        $category = get_the_category();
-                        if (!empty($category) && isset($category[0])) :
-                            ?>
-                            <div class="voice-card__category"><?php echo esc_html($category[0]->cat_name); ?></div>
-                        <?php endif; ?>
+                      $terms = get_the_terms(get_the_ID(), 'voice_category');
+                      if ($terms && !is_wp_error($terms)) {
+                          $term = reset($terms); // 最初のタームを取得
+                          echo '<div class="voice-card__category">' . esc_html($term->name) . '</div>';
+                      }
+                      ?>
                     </div>
                     <div class="voice-card__heading">
                       <h3 class="voice-card__title"><?php the_title(); ?></h3>

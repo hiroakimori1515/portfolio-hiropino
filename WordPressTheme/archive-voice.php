@@ -57,12 +57,13 @@
                           echo $tag->name;
                         }
                       ?></div>
-                        <?php
-                        $category = get_the_category();
-                        if (!empty($category) && isset($category[0])) :
-                            ?>
-                            <div class="voice-card__category"><?php echo esc_html($category[0]->cat_name); ?></div>
-                        <?php endif; ?>
+                      <?php
+                      $terms = get_the_terms(get_the_ID(), 'voice_category');
+                      if ($terms && !is_wp_error($terms)) {
+                          $term = reset($terms); // 最初のタームを取得
+                          echo '<div class="voice-card__category">' . esc_html($term->name) . '</div>';
+                      }
+                      ?>
                       </div>
                       <div class="voice-card__heading">
                         <h3 class="voice-card__title"><?php the_title(); ?></h3>

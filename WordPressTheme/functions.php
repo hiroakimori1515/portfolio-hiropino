@@ -129,6 +129,7 @@ add_filter('walker_nav_menu_start_el', 'add_menu_description_to_link', 10, 4);
 SCF::add_options_page( 'CodeUps Diving', 'よくある質問','manage_options', 'theme-options' );
 SCF::add_options_page( 'CodeUps Diving', '料金一覧','manage_options', 'price-options' );
 SCF::add_options_page( 'CodeUps Diving', 'ギャラリー','manage_options', 'gallery-options' );
+SCF::add_options_page( 'CodeUps Diving', 'メイン画像','manage_options', 'main_images-options' );
 
 // 記事のPVを取得
 function getPostViews($postID) {

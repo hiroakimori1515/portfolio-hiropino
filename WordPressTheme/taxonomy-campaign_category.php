@@ -50,11 +50,13 @@
               </div>
               <div class="campaign-card__inner campagin-card__inner--page-campaign">
                 <div class="campaign-card__head">
-                  <?php 
-                  $category = get_the_category();
-                  if($category[0]) : ?>
-                  <p class="campaign-card__category"><?php echo $category[0]->cat_name; ?></p>
-                  <?php endif ?>
+                  <?php
+                  $terms = get_the_terms(get_the_ID(), 'campaign_category');
+                  if ($terms && !is_wp_error($terms)) {
+                      $term = reset($terms); // 最初のタームを取得
+                      echo '<p class="campaign-card__category">' . esc_html($term->name) . '</p>';
+                  }
+                  ?>
                   <h3 class="campaign-card__title campaign-card__title--page-campaign"><?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;>">(本キャンペーンは終了しました）</span>';} ?></h3>
                 </div>
                 <div class="campaign-card__body campaign-card__body--page-campaign">
