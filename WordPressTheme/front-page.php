@@ -8,30 +8,21 @@
         </div>
         <div class="mv__swiper swiper js-mv-swiper">
           <div class="swiper-wrapper">
-            <div class="mv__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/main-view.jpg" media="(min-width: 768px)">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-sp.jpg" alt="ウミガメの画像">
-              </picture>
-            </div>
-            <div class="mv__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/main-view2.jpg" media="(min-width: 768px)">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-sp2.jpg" alt="ダイビングの画像">
-              </picture>
-            </div>
-            <div class="mv__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/main-view3.jpg" media="(min-width: 768px)">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-sp3.jpg" alt="ボートの画像">
-              </picture>
-            </div>
-            <div class="mv__swiper-slide swiper-slide">
-              <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/main-view4.jpg" media="(min-width: 768px)">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/mv-sp4.jpg" alt="砂浜の画像">
-              </picture>
-            </div>
+            <?php
+            $repeat_item = SCF::get_option_meta('main_images-options', 'main_images');
+            foreach ($repeat_item as $fields) {
+                $pc_main_id = $fields['pc_main'];
+                $sp_main_id = $fields['sp_main'];
+                $pc_main_data = wp_get_attachment_image_src($pc_main_id, 'full');
+                $sp_main_data = wp_get_attachment_image_src($sp_main_id, 'full');
+                $alt = get_post_meta($pc_main_id, '_wp_attachment_image_alt', true) ?: get_post($pc_main_id)->post_title;
+                ?>
+              <div class="mv__swiper-slide swiper-slide">
+                  <img src="<?php echo esc_url($sp_main_data[0]); ?>"
+                      srcset="<?php echo esc_attr($pc_main_data[0]); ?> 768w"
+                      alt="<?php echo esc_attr($alt); ?>">
+              </div>
+            <?php } ?>
           </div>
         </div>
       </div>
