@@ -3,8 +3,8 @@
     <div class="mv js-mv">
       <div class="mv__inner">
         <div class="mv__header js-mv-header">
-          <h2 class="mv__title">Seabreeze Bay<br>Golf Resort</h2>
-          <p class="mv__subtitle">Where Waves Meet Fairways</p>
+          <h2 class="mv__title">Mirage Beach</h2>
+          <p class="mv__subtitle">Golf Links</p>
         </div>
         <div class="mv__swiper swiper js-mv-swiper">
           <div class="swiper-wrapper">

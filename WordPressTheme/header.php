@@ -11,7 +11,7 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo">
-        <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/CodeUps.png" alt="CodeUpsのロゴ画像"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/MirageBeach_logo.png" alt="CodeUpsのロゴ画像"></a>
       </h1>
 
       <div class="header__drawer hamburger js-hamburger">
