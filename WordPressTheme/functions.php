@@ -8,8 +8,12 @@ function enqueue_styles_and_scripts() {
     wp_enqueue_style('google-font-gotu');
 
     // Google Font - Lato
-    wp_register_style('google-font-lato', 'https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+    wp_register_style('google-font-lato', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     wp_enqueue_style('google-font-lato');
+
+    // Google Font - Gentium Book Plus
+    wp_register_style('google-font-gentium-book-plus', 'https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    wp_enqueue_style('google-font-gentium-book-plus');
 
     // Google Font - Noto Sans JP
     wp_register_style('google-font-noto-sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
