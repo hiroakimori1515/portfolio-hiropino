@@ -90,6 +90,7 @@
   font-weight: $normal;
   line-height: 1;
   color: $main;
+  white-space: nowrap;
   @include mq('md') {
     font-size: rem(80);
     line-height: 1.25;

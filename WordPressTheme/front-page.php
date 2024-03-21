@@ -96,21 +96,20 @@
         <div class="about__wrapper">
           <div class="about__images">
             <div class="about__image-left">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean1.jpg" alt="シーサーの画像">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about2.jpg" alt="ピンの上にゴルフボールをセットする男性の手">
             </div>
             <div class="about__image-right">
               <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean2-sp.jpg" media="(max-width: 767px)" >
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean2.jpg" alt="海中の画像">
+                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" media="(max-width: 767px)" >
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" alt="グリーン手前に深いバンカーのあるコース">
               </picture>
             </div>
           </div>
           <div class="about__body">
             <h3 class="about__heading">Dive into
-              <br>the Ocean</h3>
+              <br>the Mirage</h3>
             <div class="about__content">
-              <p class="about__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+              <p class="about__text">Mirage Beachは、蜃気楼（しんきろう）のようなビーチのゴルフリゾート。<br>蜃気楼（ミラージュ）は、光の屈折によって遠くにある物体が近くに見えたり、実際には存在しない景色が見えたりする現象を指します。<br>まるで夢のように美しく、幻想的な雰囲気を持つ、唯一無二のゴルフリゾートです。</p>
               <div class="about__button">
                 <a href="<?php echo esc_url( home_url( '/about/' ) );?>" class="button">View more<span></span></a>
               </div>
@@ -124,17 +123,17 @@
       <div class="information__inner inner">
         <div class="information__title section-header">
           <p class="section-header__entitle">Information</p>
-          <h2 class="section-header__jatitle">ダイビング情報</h2>
+          <h2 class="section-header__jatitle">レッスン情報</h2>
         </div>
         <div class="information__contents">
           <div class="information__wrapper">
             <div class="information__image js-colorbox">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information.jpg" alt="熱帯魚の画像">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information.jpg" alt="生徒にスイングレッスンをしているレッスンプロの様子">
             </div>
           </div>
           <div class="information__content">
-            <h3 class="information__heading">ライセンス取得</h3>
-            <p class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関の「正規店」として店舗登録されています。<br>
+            <h3 class="information__heading">ラウンドレッスン</h3>
+            <p class="information__text">当ゴルフ場はツアープロライセンス（Cカード）世界最大の教育機関の「正規店」として店舗登録されています。<br>
             正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
             <div class="information__button">
               <a href="<?php echo esc_url( home_url( '/information/' ) );?>" class="button">View more<span></span></a>
@@ -261,8 +260,8 @@
         <div class="price__contents">
           <div class="price__image js-colorbox">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/priceimg.jpg" media="(min-width: 768px)">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean3.jpg" alt="ウミガメの画像">
+              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery1.jpg" media="(min-width: 768px)">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/gallery1.jpg" alt="グリーンを上から撮影した映像">
             </picture>
           </div>
           <ul class="price__items">

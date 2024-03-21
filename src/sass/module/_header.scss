@@ -34,10 +34,10 @@
 
 .header__logo img {
   position: relative;
-  width: rem(102);
+  width: rem(175);
   z-index: 500;
   @include mq('md') {
-    width: rem(133);
+    width: rem(175);
   }
 }
 

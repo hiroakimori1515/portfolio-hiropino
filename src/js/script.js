@@ -53,7 +53,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-hamburger").addClass('is-active');
       $("body").addClass('is-active');
       $(".js-sp-nav").fadeIn(300);
-      $(".header").css('background', '#408F95');
+      $(".header").css('background', '#004c42');
     }
   });
 

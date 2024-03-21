@@ -46,10 +46,6 @@
   opacity: .6;
 }
 
-.footer__nav {
-
-}
-
 .footer__nav-items {
   margin-top: rem(24);
   column-count: 2;
@@ -63,7 +59,7 @@
 
 .footer__nav-item {
   padding-left: rem(22);
-  background: url(/assets/images/common/hitode.png);
+  background: url(../images/common/golf.svg);
   background-repeat: no-repeat;
   background-size: rem(18) rem(18);
   background-position: 0 rem(20);

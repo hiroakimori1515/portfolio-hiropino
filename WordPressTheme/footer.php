@@ -6,7 +6,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
       <div class="contact__contents">
         <div class="contact__left">
           <div class="contact__logo">
-            <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/CodeUps2.png" alt="CodeUpsのロゴ画像"></a>
+            <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/MirageBeach_logo-contact.png" alt="MirageBeachのロゴ画像"></a>
           </div>
           <div class="contact__info">
             <div class="contact__meta">
@@ -48,10 +48,10 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
   <footer class="footer layout-footer <?php if (is_404()) echo 'layout-footer--page-contact'; ?> <?php if (is_404()) echo 'layout-footer--page-404'; ?>">
     <div class="footer__inner inner">
       <div class="footer__head">
-        <div class="footer__logo"><a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/CodeUps.png" alt="CodeUpsのロゴ画像"></a></div>
+        <div class="footer__logo"><a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/MirageBeach_logo.png" alt="MirageBeachのロゴ画像"></a></div>
         <div class="footer__sns">
-          <a href="#"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/FacebookLogo.png" alt="facebookのロゴ画像"></a>
-          <a href="#"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/InstagramLogo.png" alt="instagramのロゴ画像"></a>
+          <a href="#"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/FacebookLogo.svg" alt="facebookのロゴ画像"></a>
+          <a href="#"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/InstagramLogo.svg" alt="instagramのロゴ画像"></a>
         </div>
       </div>
       <nav class="footer__nav footer-nav">

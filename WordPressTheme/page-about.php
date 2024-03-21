@@ -22,12 +22,12 @@
         <div class="page-about__wrapper">
           <div class="page-about__images">
             <div class="page-about__image-left">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean1.jpg" alt="シーサーの画像">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about2.jpg" alt="ピンの上にゴルフボールをセットする男性の手">
             </div>
             <div class="page-about__image-right">
               <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean2-sp.jpg" media="(max-width: 767px)" >
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/ocean2.jpg" alt="海中の画像">
+                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" media="(max-width: 767px)" >
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" alt="グリーン手前に深いバンカーのあるコース">
               </picture>
             </div>
           </div>
