@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.archive {
-
-}
-
-.archive__menu {
-
-}
-
 .archive__year {
   position: relative;
   padding-left: rem(32);
@@ -30,25 +22,25 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: rem(24);
-  height: rem(24);
-  background-image: url(../images/common/Polygon-right.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17px solid $main;
+  border-right: 0;
   transition: .3s;
 }
 
 .archive__year.is-active::before {
-  background-image: url(../images/common/Polygon-under.png);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 17px solid $main;
+  border-bottom: 0;
   transition: .3s;
-}
-
-.archive__lists {
-
-}
-
-.archive__list {
-
 }
 
 .archive__list-item {
@@ -75,10 +67,12 @@
   top: 50%;
   transform: translateY(-50%);
   left: rem(24);
-  width: rem(24);
-  height: rem(24);
-  background-image: url(../images/common/Polygon-right.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17px solid $main;
+  border-right: 0;
   transition: .3s;
 }

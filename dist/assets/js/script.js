@@ -164,7 +164,6 @@ jQuery(function ($) {
   });
 
   // モーダル
-
   jQuery(".js-modal-trigger").on("click", function () {
     var imageHtml = jQuery(this).find("img").prop("outerHTML");
     jQuery(".gallery__overlay").html(imageHtml);

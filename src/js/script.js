@@ -164,7 +164,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // モーダル
-
   jQuery(".js-modal-trigger").on("click", function() {
     var imageHtml = jQuery(this).find("img").prop("outerHTML");
     jQuery(".gallery__overlay").html(imageHtml);

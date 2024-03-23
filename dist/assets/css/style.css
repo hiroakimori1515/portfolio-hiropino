@@ -367,22 +367,30 @@ a {
 }
 
 .archive__year::before {
-	background-image: url(../images/common/Polygon-right.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+	border-bottom: 10px solid transparent;
+	border-left: 17px solid #004c42;
+	border-right: 0;
+	border-style: solid;
+	border-top: 10px solid transparent;
 	content: "";
-	height: 1.5rem;
+	height: 0;
 	left: 0;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	transition: 0.3s;
-	width: 1.5rem;
+	width: 0;
 }
 
 .archive__year.is-active::before {
-	background-image: url(../images/common/Polygon-under.png);
+	border-bottom: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-style: solid;
+	border-top: 17px solid #004c42;
+	height: 0;
 	transition: 0.3s;
+	width: 0;
 }
 
 .archive__list-item {
@@ -404,17 +412,19 @@ a {
 }
 
 .archive__list-item::before {
-	background-image: url(../images/common/Polygon-right.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+	border-bottom: 10px solid transparent;
+	border-left: 17px solid #004c42;
+	border-right: 0;
+	border-style: solid;
+	border-top: 10px solid transparent;
 	content: "";
-	height: 1.5rem;
+	height: 0;
 	left: 1.5rem;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	transition: 0.3s;
-	width: 1.5rem;
+	width: 0;
 }
 
 .bg-campaign {
