@@ -879,22 +879,16 @@ a {
 	right: 12.5%;
 }
 
-.campaign .swiper-button-prev::after,
-.campaign .swiper-button-next::after {
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: "";
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
 .campaign .swiper-button-prev::after {
-	background-image: url("../images/common/prev.png");
+	border-left: 1px solid #004c42;
+	left: 52%;
+	transform: translate(-50%, -50%) skew(-45deg);
 }
 
 .campaign .swiper-button-next::after {
-	background-image: url("../images/common/next.png");
+	border-right: 1px solid #004c42;
+	left: 45%;
+	transform: translate(-50%, -50%) skew(45deg);
 }
 
 .campaign__container {
@@ -3665,11 +3659,25 @@ html {
 
 .campaign .swiper-button-prev,
 .campaign .swiper-button-next {
+	background-color: #FFFFFF;
+	border: 1px solid #004c42;
+	border-radius: 50%;
 	display: block;
 	height: 5rem;
 	position: absolute;
 	top: -5rem;
 	width: 5rem;
+}
+
+.campaign .swiper-button-prev::after,
+.campaign .swiper-button-next::after {
+	border-bottom: 1px solid #004c42;
+	content: "";
+	display: inline-block;
+	height: 0.375rem;
+	position: absolute;
+	top: 48%;
+	width: 2.5rem;
 }
 
 .campaign__container {
