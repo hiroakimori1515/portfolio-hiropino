@@ -3,8 +3,8 @@
  <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_template_directory_uri( ); ?>/assets/images/common/blog-img-sp.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/blog-img.jpg" alt="稚魚の群れの画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg.jpg" alt="夕陽の中プレイするゴルファー">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">Blog</h2>

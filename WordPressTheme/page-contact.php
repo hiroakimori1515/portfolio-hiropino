@@ -3,8 +3,8 @@
 <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img-sp.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" alt="青い海と白い砂浜の画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" alt="上空からとらえたゴルフコースの全容">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">Contact</h2>

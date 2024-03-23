@@ -133,8 +133,7 @@
           </div>
           <div class="information__content">
             <h3 class="information__heading">ラウンドレッスン</h3>
-            <p class="information__text">当ゴルフ場はツアープロライセンス（Cカード）世界最大の教育機関の「正規店」として店舗登録されています。<br>
-            正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
+            <p class="information__text">当ゴルフ場は、初心者から経験豊富なゴルファーまで、すべての方が安心してラウンドレッスンを受けられる環境を整えています。<br>プロの指導のもと、安全かつ快適な環境でラウンドレッスンを提供し、ゴルフスキルの向上を全面的にサポートいたします。</p>
             <div class="information__button">
               <a href="<?php echo esc_url( home_url( '/information/' ) );?>" class="button">View more<span></span></a>
             </div>
@@ -267,7 +266,7 @@
           <ul class="price__items">
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price1" class="price__item-title">ライセンス講習</h3>
+                <h3 id="price1" class="price__item-title">通常プラン</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -283,7 +282,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price2" class="price__item-title">体験ダイビング</h3>
+                <h3 id="price2" class="price__item-title">レッスン付き</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -299,7 +298,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price3" class="price__item-title">ファンダイビング</h3>
+                <h3 id="price3" class="price__item-title">限定プラン</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -315,7 +314,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 class="price__item-title">スペシャルダイビング</h3>
+                <h3 class="price__item-title">グループ利用</h3>
               </div>
               <dl class="price__course">
               <?php

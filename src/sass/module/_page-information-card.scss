@@ -8,6 +8,7 @@
   padding: rem(24);
   @include mq('md') {
     display: flex;
+    align-items: center;
     gap: rem(48);
   }
 }
@@ -45,6 +46,7 @@
 
 .page-information-card__image img {
   aspect-ratio: 297 / 189 ;
+  object-fit: cover;
   @include mq('md') {
     aspect-ratio: 492 / 313 ;
   }

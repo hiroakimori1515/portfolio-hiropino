@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .contact {
-
+  position: relative;
 }
 
 .contact::after{
@@ -12,15 +12,15 @@
   right: calc(50% - min(48vw, 18rem));
   width: rem(109);
   height: rem(50);
-  background-image: url(../images/common/contact-fish.png);
+  background-image: url(../images/common/contact-golf.svg);
   background-size: contain;
   background-repeat: no-repeat;
   @include mq('md') {
-    background-image: url(../images/common/contact-fish_pc.png);
-    top: rem(-36);
+    background-image: url(../images/common/contact-golf.svg);
+    top: rem(-160);
     right: calc(50% - min(50vw, 42rem));
-    width: rem(301);
-    height: rem(138);
+    width: rem(320);
+    height: rem(240);
   }
 }
 

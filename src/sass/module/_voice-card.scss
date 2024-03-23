@@ -100,6 +100,11 @@
   line-height: 1.333;
   border-bottom: 1px solid $main;
   padding-bottom: rem(4);
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   @include mq('md') {
     font-size: rem(24);
   }

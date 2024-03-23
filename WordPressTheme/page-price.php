@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img-sp.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="波の上の画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="青い芝から見た青い空">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">Price</h2>
@@ -24,9 +24,9 @@
             <li data-id="#price1" id="price1" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/golf-swing.svg" alt="ゴルフスイングしているアイコン">
                 </div>
-                <h3 class="page-price__item-title">ライセンス講習</h3>
+                <h3 class="page-price__item-title">通常プラン</h3>
               </div>
               <dl class="page-price__course">
               <?php
@@ -43,9 +43,9 @@
             <li data-id="#price2" id="price2" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/golf-swing.svg" alt="ゴルフスイングしているアイコン">
                 </div>
-                <h3 class="page-price__item-title">体験ダイビング</h3>
+                <h3 class="page-price__item-title">レッスン付き</h3>
               </div>
               <dl class="page-price__course">
               <?php
@@ -62,9 +62,9 @@
             <li data-id="#price3" id="price3" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/golf-swing.svg" alt="ゴルフスイングしているアイコン">
                 </div>
-                <h3 class="page-price__item-title">ファンダイビング</h3>
+                <h3 class="page-price__item-title">限定プラン</h3>
               </div>
               <dl class="page-price__course">
               <?php
@@ -81,9 +81,9 @@
             <li data-id="#price4" id="price4" class="page-price__item">
               <div class="page-price__item-header">
                 <div class="page-price__item-icon">
-                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/animal_aquatic_nature_ocean_sea_icon.png" alt="クジラのアイコン画像">
+                  <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/golf-swing.svg" alt="ゴルフスイングしているアイコン">
                 </div>
-                <h3 class="page-price__item-title">スペシャルダイビング</h3>
+                <h3 class="page-price__item-title">グループ利用</h3>
               </div>
               <dl class="page-price__course">
               <?php

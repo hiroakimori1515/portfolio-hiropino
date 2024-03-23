@@ -31,8 +31,9 @@
   color: $main;
   line-height: 1;
   border: 1px solid $main;
-  padding: rem(9) 0;
+  padding: rem(9) rem(24);
   min-width: rem(162);
+  max-width: rem(162);
   width: 100%;
   text-align: center;
   position: relative;

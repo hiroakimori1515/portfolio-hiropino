@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img-sp.jpg" media="(max-width: 767px)" >
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" alt="魚の画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" alt="上空から見た海とゴルフコース">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">Voice</h2>
@@ -15,7 +15,6 @@
 
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
-
 
   <main>
     <div class="common-tab layout-page-common">

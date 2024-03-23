@@ -550,12 +550,12 @@ a {
 }
 
 .breadcrumb::after {
-	background-image: url(../images/common/kingyohanadai-sp.png);
+	background-image: url(../images/common/price-golf.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	content: "";
 	height: 3.4375rem;
-	left: calc(50% - min(48vw, 39rem));
+	left: calc(50% - min(48vw, 38rem));
 	position: absolute;
 	top: 3rem;
 	width: 7.5rem;
@@ -945,8 +945,9 @@ a {
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1;
+	max-width: 10.125rem;
 	min-width: 10.125rem;
-	padding: 0.5625rem 0;
+	padding: 0.5625rem 1.5rem;
 	position: relative;
 	text-align: center;
 	transition: 0.3s;
@@ -966,8 +967,12 @@ a {
 	cursor: default;
 }
 
+.contact {
+	position: relative;
+}
+
 .contact::after {
-	background-image: url(../images/common/contact-fish.png);
+	background-image: url(../images/common/contact-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
@@ -2027,6 +2032,10 @@ body.is-active {
 	text-align: center;
 }
 
+.page-about {
+	position: relative;
+}
+
 .page-about__inner {
 	max-width: 37.5rem;
 }
@@ -2220,7 +2229,9 @@ body.is-active {
 }
 
 .page-information-card__image img {
+	-o-object-fit: cover;
 	aspect-ratio: 297/189;
+	object-fit: cover;
 }
 
 .page-information-tab__inner {
@@ -2252,7 +2263,7 @@ body.is-active {
 }
 
 .page-information-tab__menu:first-child:before {
-	background-image: url(../images/common/animal_aquatic_nature_ocean_sea_icon2.png);
+	background-image: url(../images/common/golf-set.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2268,7 +2279,7 @@ body.is-active {
 }
 
 .page-information-tab__menu:nth-child(2)::before {
-	background-image: url(../images/common/fish_nature_ocean_sea_shark_icon.png);
+	background-image: url(../images/common/golf-set.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2284,7 +2295,7 @@ body.is-active {
 }
 
 .page-information-tab__menu:last-child:before {
-	background-image: url(../images/common/fish_ocean_project_sea_seafood_icon.png);
+	background-image: url(../images/common/golf-set.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2305,7 +2316,7 @@ body.is-active {
 }
 
 .page-information-tab__menu.current::before {
-	background-image: url(../images/common/animal_aquatic_nature_ocean_sea_icon.png);
+	background-image: url(../images/common/golf-swing.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2326,15 +2337,15 @@ body.is-active {
 }
 
 .page-information-tab__menu:hover:first-child::before {
-	background-image: url(../images/common/animal_aquatic_nature_ocean_sea_icon.png);
+	background-image: url(../images/common/golf-swing.svg);
 }
 
 .page-information-tab__menu:hover:nth-child(2)::before {
-	background-image: url(../images/common/animal_aquatic_nature_ocean_sea_icon.png);
+	background-image: url(../images/common/golf-swing.svg);
 }
 
 .page-information-tab__menu:hover:last-child::before {
-	background-image: url(../images/common/animal_aquatic_nature_ocean_sea_icon.png);
+	background-image: url(../images/common/golf-swing.svg);
 }
 
 .page-information-tab__content-group {
@@ -2434,7 +2445,7 @@ body.is-active {
 	background-color: #004c42;
 	content: "";
 	display: inline-block;
-	height: 3.75rem;
+	height: 2.25rem;
 	left: 0;
 	position: absolute;
 	top: 50%;
@@ -2839,7 +2850,7 @@ body.is-active {
 }
 
 .sidebar__title::before {
-	background-image: url(../images/common/sidebar-title-icon.png);
+	background-image: url(../images/common/sidebar-golf.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -3178,12 +3189,17 @@ body {
 }
 
 .voice-card__title {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 	border-bottom: 1px solid #004c42;
+	display: -webkit-box;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.333;
+	overflow: hidden;
 	padding-bottom: 0.25rem;
+	text-overflow: ellipsis;
 }
 
 .voice-card__body {
@@ -3232,6 +3248,7 @@ body {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 }
 
 .wp-pagenavi a,
@@ -3325,7 +3342,7 @@ body {
 	content: "";
 	display: block;
 	height: 0.75rem;
-	left: 30%;
+	left: 24%;
 	position: absolute;
 	top: 34%;
 	transform: translate(-50%, -50%);
@@ -3471,16 +3488,16 @@ html {
 }
 
 .about::after {
-	background-image: url(../images/common/about-us-isoginchaku.png);
+	background-image: url(../images/common/about-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	bottom: -5.3125rem;
+	bottom: -8rem;
 	content: "";
 	display: block;
-	height: 11.3125rem;
+	height: 16rem;
 	position: absolute;
-	right: calc(50% - min(48vw, 40rem));
-	width: 12.125rem;
+	right: calc(50% - min(48vw, 39rem));
+	width: 8rem;
 	z-index: 5;
 }
 
@@ -3561,16 +3578,16 @@ html {
 }
 
 .blog::after {
-	background-image: url(../images/common/blog-tai.png);
+	background-image: url(../images/common/blog-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
 	display: block;
-	height: 12.5625rem;
-	left: calc(50% - min(48vw, 40rem));
+	height: 13.5rem;
+	left: calc(50% - min(48vw, 35rem));
 	position: absolute;
 	top: 1.5rem;
-	width: 27.3125rem;
+	width: 12.5rem;
 }
 
 .blog__items {
@@ -3582,9 +3599,9 @@ html {
 }
 
 .breadcrumb::after {
-	background-image: url(../images/common/kingyohanadai.png);
-	height: 8.625rem;
-	top: 6.375rem;
+	background-image: url(../images/common/price-golf.svg);
+	height: 12rem;
+	top: 2rem;
 	width: 18.8125rem;
 }
 
@@ -3676,11 +3693,11 @@ html {
 }
 
 .contact::after {
-	background-image: url(../images/common/contact-fish_pc.png);
-	height: 8.625rem;
+	background-image: url(../images/common/contact-golf.svg);
+	height: 15rem;
 	right: calc(50% - min(50vw, 42rem));
-	top: -2.25rem;
-	width: 18.8125rem;
+	top: -10rem;
+	width: 20rem;
 }
 
 .contact__contents {
@@ -3969,6 +3986,20 @@ select {
 	margin-top: 5rem;
 }
 
+.page-about::after {
+	background-image: url(../images/common/about-golf.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -8rem;
+	content: "";
+	display: block;
+	height: 16rem;
+	position: absolute;
+	right: calc(50% - min(48vw, 39rem));
+	width: 8rem;
+	z-index: 5;
+}
+
 .page-about__image-left {
 	display: block;
 	width: 37%;
@@ -4060,6 +4091,7 @@ select {
 }
 
 .page-information-card__inner {
+	align-items: center;
 	display: flex;
 	gap: 3rem;
 }
@@ -4143,6 +4175,10 @@ select {
 	font-size: 1rem;
 }
 
+.page-price__course-charge::before {
+	height: 3.75rem;
+}
+
 .page-privacy-policy__inner {
 	max-width: 53rem;
 }
@@ -4166,16 +4202,16 @@ select {
 }
 
 .price::after {
-	background-image: url(../images/common/price-tai.png);
+	background-image: url(../images/common/price-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	bottom: 3.75rem;
+	bottom: 1.25rem;
 	content: "";
 	display: block;
 	height: 12.5625rem;
 	left: calc(50% - min(48vw, 40rem));
 	position: absolute;
-	width: 27.3125rem;
+	width: 20rem;
 }
 
 .price__contents {
@@ -4341,29 +4377,29 @@ select {
 }
 
 .voice::before {
-	background-image: url(../images/common/voice-tai.png);
+	background-image: url(../images/common/voice-golf_left.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
 	display: block;
-	height: 8.625rem;
+	height: 9.625rem;
 	left: calc(50% - min(48vw, 40rem));
 	position: absolute;
 	top: -7.5rem;
-	width: 18.8125rem;
+	width: 19.75rem;
 }
 
 .voice::after {
-	background-image: url(../images/common/voice-tatu.png);
+	background-image: url(../images/common/voice-golf_right.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	bottom: -4.375rem;
 	content: "";
 	display: block;
-	height: 10.0625rem;
+	height: 13rem;
 	position: absolute;
-	right: calc(50% - min(48vw, 34rem));
-	width: 4.4375rem;
+	right: calc(50% - min(48vw, 38rem));
+	width: 8rem;
 }
 
 .voice__items {

@@ -16,19 +16,19 @@
 .breadcrumb::after {
   content: '';
   position: absolute;
-  background-image: url(../images/common/kingyohanadai-sp.png);
+  background-image: url(../images/common/price-golf.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   top: rem(48);
-  left: calc(50% - min(48vw ,39rem));
+  left: calc(50% - min(48vw ,38rem));
   width: rem(120);
   height: rem(55);
   z-index: -1;
   @include mq('md') {
-    background-image: url(../images/common/kingyohanadai.png);
-    top: rem(102);
+    background-image: url(../images/common/price-golf.svg);
+    top: rem(32);
     width: rem(301);
-    height: rem(138);
+    height: rem(192);
   }
 }
 

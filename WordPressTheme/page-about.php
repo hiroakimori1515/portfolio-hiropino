@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-img-sp.jpg" media="(max-width: 767px)" >
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/aboutus-img.jpg" alt="海中の画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img.jpg" alt="パッとを打つ前にセットした際のパターとボール">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">About us</h2>
@@ -33,10 +33,9 @@
           </div>
           <div class="page-about__body">
             <h3 class="page-about__heading">Dive into
-              <br>the Ocean</h3>
+              <br>the Mirage</h3>
             <div class="page-about__content">
-              <p class="page-about__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              <p class="page-about__text">Mirage Beachは、蜃気楼（しんきろう）のようなビーチのゴルフリゾート。<br>蜃気楼（ミラージュ）は、光の屈折によって遠くにある物体が近くに見えたり、実際には存在しない景色が見えたりする現象を指します。<br>まるで夢のように美しく、幻想的な雰囲気を持つ、唯一無二のゴルフリゾートです。
             </div>
           </div>
         </div>

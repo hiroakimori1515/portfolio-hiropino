@@ -1,23 +1,10 @@
 @use "global" as *;
 
-.page-price {
-
-}
-
 .page-price__inner {
   max-width: rem(600);
   @include mq('md') {
     max-width: rem(748);
   }
-}
-
-.page-price__contents {
-  
-}
-
-
-.page-price__items {
-  
 }
 
 .page-price__item {
@@ -138,7 +125,10 @@
   transform: translateY(-50%);
   left: 0;
   width: rem(1);
-  height: rem(60);
+  height: rem(36);
   background-color: $main;
+  @include mq('md') {
+    height: rem(60);
+  }
 }
 
