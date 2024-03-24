@@ -3,14 +3,8 @@
 .voice-card {
   background: $base;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-  // display: block;
   z-index: 1;
 }
-
-.voice-card:hover {
-  opacity: .7;
-}
-
 
 .voice-card__inner{
   padding: rem(20) rem(16) rem(25);
@@ -86,26 +80,16 @@
   }
 }
 
-.voice-card__heading {
-  margin-top: rem(8);
-  @include mq('md') {
-    margin-top: rem(16);
-  }
-}
-
 .voice-card__title {
+  margin-top: rem(8);
   font-size: rem(16);
   font-weight: 500;
   font-family: $base-font-family;
   line-height: 1.333;
   border-bottom: 1px solid $main;
   padding-bottom: rem(4);
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
   @include mq('md') {
+    margin-top: rem(16);
     font-size: rem(24);
   }
 }

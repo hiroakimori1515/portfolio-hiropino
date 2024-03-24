@@ -37,8 +37,8 @@
           <?php if (have_posts(  )): ?>
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
-            <li class="voice-cards__item voice-card ">
-              <a href="#" class="voice-card__link">
+            <li class="voice-cards__item voice-card">
+              <div class="voice-card__link">
                 <div class="voice-card__inner">
                   <div class="voice-card__wrapper">
                     <div class="voice-card__image js-colorbox">
@@ -50,31 +50,30 @@
                     </div>
                     <div class="voice-card__head">
                       <div class="voice-card__meta">
-                        <div class="voice-card__tag"><?php 
+                        <div class="voice-card__tag">
+                        <?php 
                         $tags = get_the_tags();
                         foreach ( $tags as $tag ) {
                           echo $tag->name;
                         }
-                      ?></div>
-                      <?php
-                      $terms = get_the_terms(get_the_ID(), 'voice_category');
-                      if ($terms && !is_wp_error($terms)) {
-                          $term = reset($terms); // 最初のタームを取得
-                          echo '<div class="voice-card__category">' . esc_html($term->name) . '</div>';
-                      }
-                      ?>
+                        ?>
+                        </div>
+                        <?php
+                        $terms = get_the_terms(get_the_ID(), 'voice_category');
+                        if ($terms && !is_wp_error($terms)) {
+                            $term = reset($terms); // 最初のタームを取得
+                            echo '<div class="voice-card__category">' . esc_html($term->name) . '</div>';
+                        }
+                        ?>
                       </div>
-                      <div class="voice-card__heading">
-                        <h3 class="voice-card__title"><?php the_title(); ?></h3>
-                      </div>
+                      <h3 class="voice-card__title"><?php the_title(); ?></h3>
                     </div>
                   </div>
                   <div class="voice-card__body">
-                    <p class="voice-card__text"><?php the_excerpt(); ?>
-                    </p>
+                    <?php the_content(); ?>
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <?php endwhile; ?>
           <?php endif; ?>

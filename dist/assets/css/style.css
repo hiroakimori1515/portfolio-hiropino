@@ -447,10 +447,6 @@ a {
 	z-index: 1;
 }
 
-.blog-card:hover {
-	opacity: 0.7;
-}
-
 .blog-card:hover .blog-card__image img {
 	transform: scale(1.1);
 }
@@ -749,10 +745,6 @@ a {
 	padding: 0.5rem 1rem 1.625rem;
 }
 
-.campaign-card__head {
-	flex-grow: 1;
-}
-
 .campaign-card__category {
 	border: 1px solid #004c42;
 	color: #004c42;
@@ -784,6 +776,9 @@ a {
 }
 
 .campaign-card__body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	margin-top: 0.5rem;
 	text-align: center;
 }
@@ -835,6 +830,7 @@ a {
 
 .campaign-card__text {
 	color: #0D2936;
+	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
@@ -1940,6 +1936,36 @@ body.is-active {
 	width: 100%;
 }
 
+.loading {
+	align-items: center;
+	background-color: #FFFFFF;
+	bottom: 0;
+	display: grid;
+	justify-items: center;
+	left: 0;
+	place-items: center;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+.loading-screen {
+	background-color: #ebebeb;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	translate: 0 100vh;
+	z-index: 9998;
+}
+
+.loading p {
+	font-family: "Gentium Book Plus", serif;
+	font-size: 2rem;
+}
+
 .mv {
 	height: 100vh;
 	position: relative;
@@ -2655,10 +2681,6 @@ body.is-active {
 	position: relative;
 }
 
-.popular-posts-card:hover {
-	opacity: 0.7;
-}
-
 .popular-posts-card:hover .popular-posts-card__image img {
 	transform: scale(1.1);
 }
@@ -3138,10 +3160,6 @@ body {
 	z-index: 1;
 }
 
-.voice-card:hover {
-	opacity: 0.7;
-}
-
 .voice-card__inner {
 	padding: 1.25rem 1rem 1.5625rem;
 }
@@ -3188,22 +3206,14 @@ body {
 	padding: 0.125rem 0.75rem;
 }
 
-.voice-card__heading {
-	margin-top: 0.5rem;
-}
-
 .voice-card__title {
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
 	border-bottom: 1px solid #004c42;
-	display: -webkit-box;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.333;
-	overflow: hidden;
+	margin-top: 0.5rem;
 	padding-bottom: 0.25rem;
-	text-overflow: ellipsis;
 }
 
 .voice-card__body {
@@ -4377,12 +4387,9 @@ select {
 	padding: 0.25rem 1rem;
 }
 
-.voice-card__heading {
-	margin-top: 1rem;
-}
-
 .voice-card__title {
 	font-size: 1.5rem;
+	margin-top: 1rem;
 }
 
 .voice-card__body {

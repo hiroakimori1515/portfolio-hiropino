@@ -97,17 +97,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         return false;
     });
   });
-  
+
   var swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     loopedSlides: 4,
     clickable: true,
-    effect: 'fade', // フェードのエフェクト
+    effect: 'fade',
+    speed: 2000,
     autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    speed: 2000, // ２秒かけながら次の画像へ移動
+      delay: 4000,
+      disableOnInteraction: false 
+    }
   });
 
   var swiper = new Swiper(".js-campaign-swiper", {
@@ -304,5 +304,78 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       }
     });
   });
+
+  // loading
+  const loadingAreaGray = document.querySelector('.loading');
+  const loadingAreaGreen = document.querySelector('.loading-screen');
+  const loadingText = document.querySelector('.loading p');
+
+  window.addEventListener('load', () => {
+    // ローディング中（グレースクリーン）
+    loadingAreaGray.animate(
+      {
+        opacity: [1, 0],
+        visibility: 'hidden',
+      },
+      {
+        duration: 2000,
+        delay: 1200,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+    );
+
+    // ローディング中（薄緑スクリーン）
+    loadingAreaGreen.animate(
+      {
+        translate: ['0 100vh', '0 0', '0 -100vh']
+      },
+      {
+        duration: 2000,
+        delay: 800,
+        easing: 'ease',
+        fill: 'forwards',
+      }
+    );
+
+    // ローディング中テキスト
+    loadingText.animate([
+      { opacity: 1, offset: 0 }, // 開始状態
+      { opacity: 1, offset: 0.8 }, // 途中状態：透明度1を維持
+      { opacity: 0, offset: 1 } // 最終状態：透明度0
+    ], {
+      duration: 1200,
+      easing: 'ease',
+      fill: 'forwards'
+    });
+  });
+
+  // voice-card__wrapperの高さ揃える
+  function adjustCardWrapperHeight() {
+    let wrappers = document.querySelectorAll('.voice-card__wrapper');
+    let maxHeight = 0;
+  
+    // 一旦全ての高さをリセット
+    wrappers.forEach(function(wrapper) {
+      wrapper.style.height = 'auto';
+    });
+  
+    // 最大の高さを見つける
+    wrappers.forEach(function(wrapper) {
+      if (wrapper.offsetHeight > maxHeight) {
+        maxHeight = wrapper.offsetHeight;
+      }
+    });
+  
+    // 最大の高さを全てのwrapperに適用
+    wrappers.forEach(function(wrapper) {
+      wrapper.style.height = `${maxHeight}px`;
+    });
+  }
+  
+  // ページ読み込みとウィンドウリサイズ時に高さ調整を実行
+  window.onload = adjustCardWrapperHeight;
+  window.onresize = adjustCardWrapperHeight;
+  
 
 })

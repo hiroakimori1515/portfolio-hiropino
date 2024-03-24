@@ -17,15 +17,15 @@
 
 
   <main>
-    <div class="page-information-tab layout-page-information-tab">
+    <div id="information" class="page-information-tab layout-page-information-tab">
       <div class="page-information-tab__inner inner">
         <ul class="page-information-tab__list">
-          <li class="page-information-tab__menu js-tab current" data-tab="license">レッスン<br class="u-mobile">付き</li>
-          <li class="page-information-tab__menu js-tab" data-tab="fundiving">限定<br class="u-mobile">プラン</li>
-          <li class="page-information-tab__menu js-tab" data-tab="diving">グループ<br class="u-mobile">利用</li>
+          <li class="page-information-tab__menu js-tab current" data-tab="lesson">レッスン<br class="u-mobile">付き</li>
+          <li class="page-information-tab__menu js-tab" data-tab="exclusive">限定<br class="u-mobile">プラン</li>
+          <li class="page-information-tab__menu js-tab" data-tab="groups">グループ<br class="u-mobile">利用</li>
         </ul>
         <div class="page-information-tab__content-group">
-          <div class="page-information-tab__content-box page-information-card js-content" data-tab="license">
+          <div class="page-information-tab__content-box page-information-card js-content" data-tab="lesson">
             <div class="page-information-card__inner">
               <div class="page-information-card__head">
                 <h3 class="page-information-card__title">レッスン付き</h3>
@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-          <div class="page-information-tab__content-box page-information-card js-content" data-tab="fundiving">
+          <div class="page-information-tab__content-box page-information-card js-content" data-tab="exclusive">
             <div class="page-information-card__inner">
               <div class="page-information-card__head">
                 <h3 class="page-information-card__title">限定プラン</h3>
@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="page-information-tab__content-box page-information-card js-content" data-tab="diving">
+          <div class="page-information-tab__content-box page-information-card js-content" data-tab="groups">
             <div class="page-information-card__inner">
               <div class="page-information-card__head">
                 <h3 class="page-information-card__title">グループ利用</h3>

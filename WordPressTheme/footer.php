@@ -60,12 +60,12 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
             <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>">キャンペーン</a>
             <ul>
               <li>
-            <?php
-                $terms = get_terms('campaign_category');
-                foreach ( $terms as $term ) {
-                echo '<a href="'.get_term_link($term).'">'.esc_html($term->name).'</a>';
-                }
-            ?>
+                <?php
+                    $terms = get_terms('campaign_category');
+                    foreach ( $terms as $term ) {
+                    echo '<a href="'.get_term_link($term).'">'.esc_html($term->name).'</a>';
+                    }
+                ?>
               </li>
             </ul>
           </li>
@@ -75,9 +75,9 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           <li class="footer-nav__item">
             <a href="<?php echo esc_url( home_url( '/information/' ) );?>">ダイビング情報</a>
             <ul>
-              <li><a href="<?php echo esc_url( home_url( '/information?tab=license' ) );?>">ライセンス講習</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/information?tab=diving' ) );?>">体験ダイビング</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/information?tab=fundiving' ) );?>">ファンダイビング</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/information?tab=lesson' ) );?>">レッスン付き</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/information?tab=exclusive' ) );?>">限定プラン</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/information?tab=groups' ) );?>">グループ利用</a></li>
             </ul>
           </li>
           <li class="footer-nav__item">
@@ -89,9 +89,9 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           <li class="footer-nav__item">
             <a href="<?php echo esc_url( home_url( '/price/' ) );?>">料金一覧</a>
             <ul>
-              <li><a href="<?php echo esc_url( home_url( '/price/#price1' ) );?>">ライセンス講習</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/price/#price2' ) );?>">体験ダイビング</a></li>
-              <li><a href="<?php echo esc_url( home_url( '/price/#price3' ) );?>">ファンダイビング</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price1' ) );?>">レッスン付き</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price2' ) );?>">限定プラン</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/price/#price3' ) );?>">グループ利用</a></li>
             </ul>
           </li>
           <li class="footer-nav__item">
@@ -109,7 +109,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
         </ul>
       </nav>
       <div class="footer__copyright">
-        <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
+        <small>&copy; 2023 - 2024 Portfolio-Hiropino WebCoder. All Rights Reserved.</small>
       </div>
     </div>
   </footer>

@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 <main>
+    <div class="loading">
+      <p>Loading...</p>
+      <div class="loading-screen"></div>
+    </div>
+
     <div class="mv js-mv">
       <div class="mv__inner">
         <div class="mv__header js-mv-header">
@@ -45,7 +50,7 @@
             <?php if($the_query->have_posts()): ?>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
               <li class="campaign__slide swiper-slide">
-                <a href="#" class="campaign-card">
+                <div class="campaign-card">
                   <div class="campaign-card__image">
                   <?php if(has_post_thumbnail( )): ?>
                   <?php the_post_thumbnail( ); ?>
@@ -62,7 +67,7 @@
                         echo '<p class="campaign-card__category">' . esc_html($term->name) . '</p>';
                     }
                     ?>
-                      <h3 class="campaign-card__title"><?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;>">(本キャンペーンは終了しました）</span>';} ?></h3>
+                      <h3 class="campaign-card__title"><?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;">(本キャンペーンは終了しました）</span>';} ?></h3>
                     </div>
                     <div class="campaign-card__body">
                       <p class="campaign-card__menu-title"><?php the_field('campaign_1'); ?></p>
@@ -72,7 +77,7 @@
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
               <?php endwhile; ?>
               <?php wp_reset_postdata(); endif; ?>
@@ -157,7 +162,7 @@
         <?php if($the_query->have_posts()): ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="blog-cards__item blog-card">
-            <a href="#" class="blog-card__link">
+            <a href="<?php the_permalink(); ?>" class="blog-card__link">
               <div class="blog-card__inner">
                 <div class="blog-card__image">
                   <?php if(has_post_thumbnail( )): ?>
@@ -202,7 +207,7 @@
         <?php if($the_query->have_posts()): ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="voice-cards__item voice-card">
-            <a href="#" class="voice-card__link">
+            <div class="voice-card__link">
               <div class="voice-card__inner">
                 <div class="voice-card__wrapper">
                   <div class="voice-card__image js-colorbox">
@@ -239,7 +244,7 @@
                 <?php the_content(); ?>
                 </div>
               </div>
-            </a>
+            </div>
           </li>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); endif; ?>
@@ -266,7 +271,7 @@
           <ul class="price__items">
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price1" class="price__item-title">通常プラン</h3>
+                <h3 class="price__item-title">通常プラン</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -282,7 +287,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price2" class="price__item-title">レッスン付き</h3>
+                <h3 id="price1" class="price__item-title">レッスン付き</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -298,7 +303,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 id="price3" class="price__item-title">限定プラン</h3>
+                <h3 id="price2" class="price__item-title">限定プラン</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -314,7 +319,7 @@
             </li>
             <li class="price__item">
               <div class="price__item-header">
-                <h3 class="price__item-title">グループ利用</h3>
+                <h3 id="price3" class="price__item-title">グループ利用</h3>
               </div>
               <dl class="price__course">
               <?php

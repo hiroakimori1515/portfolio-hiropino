@@ -16,7 +16,6 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-
   <main>
     <div class="common-tab layout-page-common">
       <div class="common-tab__inner inner">
@@ -42,7 +41,7 @@
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
             <li class="voice-cards__item voice-card ">
-              <a href="#" class="voice-card__link">
+              <div class="voice-card__link">
                 <div class="voice-card__inner">
                   <div class="voice-card__wrapper">
                     <div class="voice-card__image js-colorbox">
@@ -74,11 +73,11 @@
                     </div>
                   </div>
                   <div class="voice-card__body">
-                    <p class="voice-card__text"><?php the_excerpt(); ?>
+                    <p class="voice-card__text"><?php the_content(); ?>
                     </p>
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
             <?php endwhile; ?>
           <?php endif; ?>

@@ -53,7 +53,7 @@
         <?php if($the_query->have_posts()): ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="sidebar__item">
-            <a href="http://codeups-diving.local/voice/" class="voice-card">
+            <div class="voice-card">
               <div class="sidebar__voice-image">
                 <?php if(has_post_thumbnail( )): ?>
                 <?php the_post_thumbnail( ); ?>
@@ -70,13 +70,13 @@
               ?>
               </div>
               <h4 class="sidebar__voice-title"><?php the_title(); ?></h4>
-            </a>
+            </div>
           </li>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="sidebar__button">
-          <a href="http://codeups-diving.local/voice/" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/voice/' ) );?>" class="button">View more<span></span></a>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
         <?php if($the_query->have_posts()): ?>
         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="sidebar__item">
-            <a href="http://codeups-diving.local/campaign/" class="campaign-card">
+            <div class="campaign-card">
               <div class="campaign-card__image">
                 <?php if(has_post_thumbnail( )): ?>
                 <?php the_post_thumbnail( ); ?>
@@ -112,13 +112,13 @@
                   </div>
                 </div>
               </div>
-            </a>
+            </div>
           </li>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="sidebar__button">
-          <a href="http://codeups-diving.local/campaign/" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button">View more<span></span></a>
         </div>
       </div>
     </div>
