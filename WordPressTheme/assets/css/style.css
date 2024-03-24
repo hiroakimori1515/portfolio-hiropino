@@ -560,11 +560,11 @@ a {
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
-	height: 3.4375rem;
+	height: 5.5rem;
 	left: calc(50% - min(48vw, 38rem));
 	position: absolute;
-	top: 3rem;
-	width: 7.5rem;
+	top: 2rem;
+	width: 8.5rem;
 	z-index: -1;
 }
 
@@ -977,11 +977,11 @@ a {
 	background-size: contain;
 	content: "";
 	display: block;
-	height: 3.125rem;
+	height: 8rem;
 	position: absolute;
-	right: calc(50% - min(48vw, 18rem));
-	top: -1.75rem;
-	width: 6.8125rem;
+	right: calc(50% - min(48vw, 23rem));
+	top: -4.5rem;
+	width: 10rem;
 }
 
 .contact__inner {
@@ -3024,6 +3024,7 @@ body.is-active {
 
 .sp-nav__inner {
 	height: inherit;
+	max-width: 37.5rem;
 	overflow: scroll;
 }
 

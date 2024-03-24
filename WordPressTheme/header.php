@@ -34,17 +34,54 @@
       </nav>
 
       <nav class="header__sp-nav sp-nav js-sp-nav">
-        <div class="sp-nav__inner">
-          <?php
-            wp_nav_menu(
-              array(
-                'depth' => '2',
-                'theme_location' => 'drawer',
-                'container' => 'false',
-                'menu_class' => 'sp-nav__items',
-              )
-            );
-         ?>
+        <div class="sp-nav__inner inner">
+          <ul class="sp-nav__items">
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>">キャンペーン</a>
+              <ul>
+                <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_2' ) );?>">レッスン付き</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_1' ) );?>">限定プラン</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_3' ) );?>">グループ利用</a></li>
+              </ul>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/about/' ) );?>">私たちについて</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/information/' ) );?>">ダイビング情報</a>
+              <ul>
+                <li><a href="<?php echo esc_url( home_url( '/information?tab=lesson' ) );?>">レッスン付き</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/information?tab=exclusive' ) );?>">限定プラン</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/information?tab=groups' ) );?>">グループ利用</a></li>
+              </ul>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/blog/' ) );?>">ブログ</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/voice/' ) );?>">お客様の声</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/price/' ) );?>">料金一覧</a>
+              <ul>
+                <li><a href="<?php echo esc_url( home_url( '/price/#price1' ) );?>">レッスン付き</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/price/#price2' ) );?>">限定プラン</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/price/#price3' ) );?>">グループ利用</a></li>
+              </ul>
+            </li>
+            <li class="sp-nav__item">
+              <a href=<?php echo esc_url( home_url( '/faq/' ) );?>">よくある質問</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/privacy-policy/' ) );?>">プライバシー <br>ポリシー</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/terms-of-service/' ) );?>">利用規約</a>
+            </li>
+            <li class="sp-nav__item">
+              <a href="<?php echo esc_url( home_url( '/contact/' ) );?>">お問い合せ</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>

@@ -19,10 +19,10 @@
   background-image: url(../images/common/price-golf.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  top: rem(48);
+  top: rem(32);
   left: calc(50% - min(48vw ,38rem));
-  width: rem(120);
-  height: rem(55);
+  width: rem(136);
+  height: rem(88);
   z-index: -1;
   @include mq('md') {
     background-image: url(../images/common/price-golf.svg);

@@ -59,14 +59,9 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           <li class="footer-nav__item">
             <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>">キャンペーン</a>
             <ul>
-              <li>
-                <?php
-                    $terms = get_terms('campaign_category');
-                    foreach ( $terms as $term ) {
-                    echo '<a href="'.get_term_link($term).'">'.esc_html($term->name).'</a>';
-                    }
-                ?>
-              </li>
+              <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_2' ) );?>">レッスン付き</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_1' ) );?>">限定プラン</a></li>
+              <li><a href="<?php echo esc_url( home_url( '/campaign_category/campaign_3' ) );?>">グループ利用</a></li>
             </ul>
           </li>
           <li class="footer-nav__item">

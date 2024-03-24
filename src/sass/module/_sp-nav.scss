@@ -19,6 +19,7 @@
 .sp-nav__inner {
   height: inherit;
   overflow: scroll;
+  max-width: rem(600);
 }
 
 .sp-nav__items {
