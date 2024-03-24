@@ -1,7 +1,7 @@
 <?php
 if (!is_404() && !is_page('contact') && !is_page('thanks')) {
 ?>
-  <section id="contact" class="contact layout-contact">
+  <section id="contact" class="contact layout-contact fadein">
     <div class="contact__inner inner">
       <div class="contact__contents">
         <div class="contact__left">

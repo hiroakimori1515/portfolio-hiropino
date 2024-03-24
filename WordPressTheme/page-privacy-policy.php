@@ -15,9 +15,8 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-
   <main>
-  <section class="page-privacy-policy layout-page-common">
+  <section class="page-privacy-policy layout-page-common fadein">
     <div class="page-privacy-policy__inner inner">
       <div class="page-privacy-policy__header">
         <h2 class="page-privacy-policy__title"><?php the_title(); ?></h2>

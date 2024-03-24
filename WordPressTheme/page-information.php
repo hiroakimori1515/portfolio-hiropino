@@ -17,7 +17,7 @@
 
 
   <main>
-    <div id="information" class="page-information-tab layout-page-information-tab">
+    <div id="information" class="page-information-tab layout-page-information-tab fadein">
       <div class="page-information-tab__inner inner">
         <ul class="page-information-tab__list">
           <li class="page-information-tab__menu js-tab current" data-tab="lesson">レッスン<br class="u-mobile">付き</li>

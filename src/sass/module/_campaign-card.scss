@@ -79,13 +79,12 @@
   font-size: rem(16);
 }
 
-.campaign-card__head {
-  flex-grow: 1;
-}
-
 .campaign-card__body {
   margin-top: rem(8);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   @include mq('md') {
     margin-top: rem(16);
   }

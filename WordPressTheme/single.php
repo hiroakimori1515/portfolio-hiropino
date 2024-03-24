@@ -24,7 +24,7 @@
   <?php if (have_posts(  )): ?>
     <?php while(have_posts(  )): ?>
       <?php the_post(  ); ?>
-      <article class="common-column layout-page-common">
+      <article class="common-column layout-page-common fadein">
         <div class="common-column__inner inner">
           <div class="common-column__content single">
             <time class="single__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>

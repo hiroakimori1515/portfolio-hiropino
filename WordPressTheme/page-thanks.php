@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-contact-thanks layout-page-common">
+    <section class="page-contact-thanks layout-page-common fadein">
       <div class="page-contact-thanks__inner inner">
         <div class="page-contact-thanks__message">
           <p class="page-contact-thanks__message-top">お問い合わせ内容を送信完了しました。</p>

@@ -783,11 +783,10 @@ a {
 	text-align: center;
 }
 
-.campaign-card__head {
-	flex-grow: 1;
-}
-
 .campaign-card__body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	margin-top: 0.5rem;
 	text-align: center;
 }
@@ -1086,6 +1085,10 @@ a {
 .contact__button {
 	margin-top: 2.5rem;
 	text-align: center;
+}
+
+.fadein {
+	opacity: 0;
 }
 
 .footer-nav__items {
@@ -2036,10 +2039,6 @@ body.is-active {
 }
 
 .page-404__inner {
-	background-image: url(../images/common/404-whale-sp.png);
-	background-position: 50% 25%;
-	background-repeat: no-repeat;
-	background-size: 21.5625rem 21.5625rem;
 	max-width: 37.5rem;
 }
 
@@ -4004,9 +4003,6 @@ select {
 }
 
 .page-404__inner {
-	background-image: url(../images/common/404-whale.png);
-	background-position: 6% 5%;
-	background-size: 43.625rem 43.625rem;
 	padding-bottom: 7rem;
 }
 

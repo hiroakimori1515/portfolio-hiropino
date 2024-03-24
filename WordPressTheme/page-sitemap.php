@@ -15,9 +15,8 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-
   <main>
-   <section class="sitemap layout-page-sitemap">
+   <section class="sitemap layout-page-sitemap fadein">
     <div class="sitemap__inner inner">
       <div class="sitemap__contents">
         <nav class="footer-nav">

@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <section id="campaign" class="campaign layout-campaign">
+    <section id="campaign" class="campaign layout-campaign fadein">
       <div class="campaign__inner inner">
         <div class="campaign__title section-header">
           <p class="section-header__entitle">Campaign</p>
@@ -49,7 +49,7 @@
             ?>
             <?php if($the_query->have_posts()): ?>
             <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-              <li class="campaign__slide swiper-slide">
+              <li class="campaign__slide swiper-slide fadein">
                 <div class="campaign-card">
                   <div class="campaign-card__image">
                   <?php if(has_post_thumbnail( )): ?>
@@ -92,7 +92,7 @@
       </div>
     </section>
 
-    <section id="about-us" class="about layout-about ">
+    <section id="about-us" class="about layout-about fadein">
       <div class="about__inner inner">
         <div class="about__title section-header">
           <p class="section-header__entitle">About us</p>
@@ -124,7 +124,7 @@
       </div>
     </section>
 
-    <section id="information" class="information layout-information">
+    <section id="information" class="information layout-information fadein">
       <div class="information__inner inner">
         <div class="information__title section-header">
           <p class="section-header__entitle">Information</p>
@@ -147,7 +147,7 @@
       </div>
     </section>
 
-    <section id="blog" class="blog layout-blog">
+    <section id="blog" class="blog layout-blog fadein">
       <div class="blog__inner inner">
         <div class="blog__title section-header">
           <p class="section-header__entitle section-header__entitle--blog">Blog</p>
@@ -192,7 +192,7 @@
       </div>
     </section>
 
-    <section id="voice" class="voice layout-voice">
+    <section id="voice" class="voice layout-voice fadein">
       <div class="voice__inner inner">
         <div class="voice__title section-header">
           <p class="section-header__entitle">Voice</p>
@@ -255,7 +255,7 @@
       </div>
     </section>
 
-    <section id="price" class="price layout-price">
+    <section id="price" class="price layout-price fadein">
       <div class="price__inner inner">
         <div class="price__title section-header">
           <p class="section-header__entitle">Price</p>
@@ -340,7 +340,5 @@
         </div>
       </div>
     </section>
-
-   
 
 <?php get_footer(); ?>

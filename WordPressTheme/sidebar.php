@@ -1,7 +1,7 @@
 <aside class="common-column__sidebar sidebar">
 
   <div class="sidebar__inner">
-    <div class="sidebar__content">
+    <div class="sidebar__content fadein">
       <h3 class="sidebar__title">人気記事</h3>
       <div class="sidebar__body">
         <ul class="sidebar__items">
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </div>
-    <div class="sidebar__content">
+    <div class="sidebar__content fadein">
       <h3 class="sidebar__title">口コミ</h3>
       <div class="sidebar__body">
         <ul class="sidebar__items">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="sidebar__content">
+    <div class="sidebar__content fadein">
       <h3 class="sidebar__title">キャンペーン</h3>
       <div class="sidebar__body">
         <ul class="sidebar__items sidebar__items--campaign">
@@ -122,7 +122,7 @@
         </div>
       </div>
     </div>
-    <div class="sidebar__content">
+    <div class="sidebar__content fadein">
       <h3 class="sidebar__title">アーカイブ</h3>
       <div class="sidebar__body">
         <div class="sidebar__items sidebar__items--archive archive">

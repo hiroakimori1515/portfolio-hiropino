@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-faq layout-page-common">
+    <section class="page-faq layout-page-common fadein">
       <div class="page-faq__inner inner">
         <dl class="page-faq__accordion">
           <?php

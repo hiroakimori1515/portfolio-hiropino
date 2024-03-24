@@ -17,7 +17,7 @@
 
 
   <main>
-  <section class="page-terms-of-service layout-page-common">
+  <section class="page-terms-of-service layout-page-common fadein">
     <div class="page-terms-of-service__inner inner">
       <div class="page-terms-of-service__header">
         <h2 class="page-terms-of-service__title"><?php the_title(); ?></h2>

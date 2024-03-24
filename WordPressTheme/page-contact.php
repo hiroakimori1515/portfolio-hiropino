@@ -16,7 +16,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-contact layout-page-common">
+    <section class="page-contact layout-page-common fadein">
       <div class="page-contact__inner inner">
         <div class="page-contact__contents form">
           <div class="form__error">

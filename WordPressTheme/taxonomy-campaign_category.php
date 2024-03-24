@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <div class="common-tab layout-page-common">
+    <div class="common-tab layout-page-common fadein">
       <div class="common-tab__inner inner">
         <ul class="common-tab__lists">
           <li><a href="<?php echo esc_url( home_url( '/campaign/' ) ) ; ?>" class="common-tab__list">ALL</a></li>
@@ -33,7 +33,7 @@
         </ul>
       </div>
     </div>
-    <section class="page-campaign layout-page-campaign">
+    <section class="page-campaign layout-page-campaign fadein">
       <div class="page-campaign__inner inner">
         <div class="page-campaign__container">
           <ul class="page-campaign__items">

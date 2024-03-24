@@ -15,9 +15,7 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-
-  <main>
-    <article class="common-column layout-page-common">
+    <article class="common-column layout-page-common fadein">
       <div class="common-column__inner inner">
         <div class="common-column__content">
           <ul class="blog-cards blog-cards--page-blog">

@@ -372,7 +372,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       wrapper.style.height = `${maxHeight}px`;
     });
   }
-
+  // blog-card__headの高さ揃える
   function adjustBlogCardHeadHeight() {
     let heads = document.querySelectorAll('.blog-card__head');
     let maxHeight = 0;
@@ -394,40 +394,115 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       head.style.height = `${maxHeight}px`;
     });
   }
-  
+  // blog-card__titleの高さ揃える
   function adjustHeadingsHeight() {
-  let headings = document.querySelectorAll('.blog-card__title');
-  let maxHeight = 0;
+    let headings = document.querySelectorAll('.blog-card__title');
+    let maxHeight = 0;
 
-  // 一旦全ての高さをリセット
-  headings.forEach(function(heading) {
-    heading.style.height = 'auto';
+    // 一旦全ての高さをリセット
+    headings.forEach(function(heading) {
+      heading.style.height = 'auto';
+    });
+
+    // 最大の高さを見つける
+    headings.forEach(function(heading) {
+      if (heading.offsetHeight > maxHeight) {
+        maxHeight = heading.offsetHeight;
+      }
+    });
+
+    // 最大の高さを全てのheadingに適用
+    headings.forEach(function(heading) {
+      heading.style.height = `${maxHeight}px`;
+    });
+  }
+
+  function adjustCampaignCardHeadHeight() {
+    let campaignHeads = document.querySelectorAll('.campaign-card__head');
+    let maxHeight = 0;
+  
+    // 一旦全ての高さをリセット
+    campaignHeads.forEach(function(campaignHead) {
+      campaignHead.style.height = 'auto';
+    });
+  
+    // 最大の高さを見つける
+    campaignHeads.forEach(function(campaignHead) {
+      if (campaignHead.offsetHeight > maxHeight) {
+        maxHeight = campaignHead.offsetHeight;
+      }
+    });
+  
+    // 最大の高さを全てのcampaignHeadに適用
+    campaignHeads.forEach(function(campaignHead) {
+      campaignHead.style.height = `${maxHeight}px`;
+    });
+  }
+
+  function adjustCampaignHeadingsHeight() {
+    let campaignTitles = document.querySelectorAll('.campaign-card__title');
+    let maxHeight = 0;
+  
+    // 一旦全ての高さをリセット
+    campaignTitles.forEach(function(campaignTitle) {
+      campaignTitle.style.height = 'auto';
+    });
+  
+    // 最大の高さを見つける
+    campaignTitles.forEach(function(campaignTitle) {
+      if (campaignTitle.offsetHeight > maxHeight) {
+        maxHeight = campaignTitle.offsetHeight;
+      }
+    });
+  
+    // 最大の高さを全てのcampaignTitleに適用
+    campaignTitles.forEach(function(campaignTitle) {
+      campaignTitle.style.height = `${maxHeight}px`;
+    });
+  }
+
+  window.onload = function() {
+    adjustCardWrapperHeight(); // voice-card__wrapperの高さを調整
+    adjustBlogCardHeadHeight(); // blog-card__headの高さを調整
+    adjustHeadingsHeight(); // blog-card__titleの高さを調整
+    adjustCampaignCardHeadHeight(); // campaign-card__headの高さを調整
+    adjustCampaignHeadingsHeight(); // campaign-card__titleの高さを調整
+  };
+  window.onresize = function() {
+    adjustCardWrapperHeight();
+    adjustBlogCardHeadHeight();
+    adjustHeadingsHeight();
+    adjustCampaignCardHeadHeight();
+    adjustCampaignHeadingsHeight();
+  };
+
+  // fadeinのアニメーション
+  const animateFade = (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          {
+            opacity: [0, 1],
+            filter: ['blur(.4rem)', 'blur(0)'],
+            translate: ['(0 4rem)', 0],
+          },
+          {
+            duration: 2000,
+            easing: 'ease',
+            fill: 'forwards',
+          }
+        );
+        obs.unobserve(entry.target);
+      }
+    });
+  };
+
+  const fadeObserver = new IntersectionObserver(animateFade);
+
+  const fadeElements = document.querySelectorAll('.fadein');
+  fadeElements.forEach((fadeElement) => {
+    fadeObserver.observe(fadeElement);
   });
-
-  // 最大の高さを見つける
-  headings.forEach(function(heading) {
-    if (heading.offsetHeight > maxHeight) {
-      maxHeight = heading.offsetHeight;
-    }
-  });
-
-  // 最大の高さを全てのheadingに適用
-  headings.forEach(function(heading) {
-    heading.style.height = `${maxHeight}px`;
-  });
-}
-
-// 使用例（ページ読み込みとウィンドウリサイズ時に高さ調整を実行）
-window.onload = function() {
-  adjustCardWrapperHeight(); // voice-card__wrapperの高さを調整
-  adjustBlogCardHeadHeight(); // blog-card__headの高さを調整
-  adjustHeadingsHeight(); // 見出しの高さを調整
-};
-window.onresize = function() {
-  adjustCardWrapperHeight();
-  adjustBlogCardHeadHeight();
-  adjustHeadingsHeight();
-};
 
 
 })

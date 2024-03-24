@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-about layout-page-common">
+    <section class="page-about layout-page-common fadein">
       <div class="page-about__inner inner">
         <div class="page-about__wrapper">
           <div class="page-about__images">
@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <section class="gallery layout-gallery">
+    <section class="gallery layout-gallery fadein">
       <div class="gallery__inner inner">
         <div class="gallery__title section-header">
           <p class="section-header__entitle"> Gallery</p>

@@ -6,14 +6,7 @@
 
 .page-404__inner {
   max-width: rem(600);
-  background-image: url(../images/common/404-whale-sp.png);
-  background-size: rem(345) rem(345);
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
   @include mq('md') {
-    background-image: url(../images/common/404-whale.png);
-    background-size: rem(698) rem(698);
-    background-position: 6% 5%;
     padding-bottom: rem(112);
   }
 }

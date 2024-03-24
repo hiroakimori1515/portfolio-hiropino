@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
    <main >
-    <section class="page-price layout-page-common">
+    <section class="page-price layout-page-common fadein">
       <div class="page-price__inner inner">
         <div class="page-price__contents">
           <ul class="page-price__items">

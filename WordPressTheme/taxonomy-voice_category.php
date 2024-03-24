@@ -17,7 +17,7 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <div class="common-tab layout-page-common">
+    <div class="common-tab layout-page-common fadein">
       <div class="common-tab__inner inner">
         <ul class="common-tab__lists">
           <li><a href="<?php echo esc_url( home_url( '/voice/' ) ) ; ?>" class="common-tab__list">ALL</a></li>
@@ -33,7 +33,7 @@
         </ul>
       </div>
     </div>
-    <section class="page-voice layout-page-voice">
+    <section class="page-voice layout-page-voice fadein">
       <div class="page-voice__inner inner">
         <div class="page-voice__container">
           <ul class="voice-cards">
