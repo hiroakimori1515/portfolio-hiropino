@@ -1,9 +1,5 @@
 @use 'global' as *;
 
-.page-privacy-policy {
-
-}
-
 .page-privacy-policy__inner {
   max-width: rem(600);
   @include mq('md') {

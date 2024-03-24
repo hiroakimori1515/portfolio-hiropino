@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.common-column {
-
-}
-
 .common-column__inner {
   max-width: rem(600);
   @include mq('md') {
@@ -11,10 +7,6 @@
     grid-template-columns: 2fr 1fr;
     gap: rem(80);
   }
-}
-
-.common-column__content {
-
 }
 
 .common-column_pagenavi {

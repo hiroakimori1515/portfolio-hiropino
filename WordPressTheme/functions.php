@@ -32,9 +32,6 @@ function enqueue_styles_and_scripts() {
 
 // スクリプトの追加
 function enqueue_custom_scripts() {
-    // GSAP
-    wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js', array(), null, true);
-
     // jQuery
     wp_enqueue_script('jquery');
 
