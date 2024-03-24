@@ -10,7 +10,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           </div>
           <div class="contact__info">
             <div class="contact__meta">
-              <p>沖縄県那覇市1-1</p>
+              <p>北海道札幌市1-1</p>
               <p>TEL:<a href="tel:01200000000" class="contact__tel">0120-000-0000</a></p>
               <p>営業時間:8:30-19:00</p>
               <p>定休日:毎週火曜日</p>
