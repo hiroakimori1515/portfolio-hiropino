@@ -377,8 +377,59 @@ jQuery(function ($) {
       wrapper.style.height = "".concat(maxHeight, "px");
     });
   }
+  function adjustBlogCardHeadHeight() {
+    var heads = document.querySelectorAll('.blog-card__head');
+    var maxHeight = 0;
 
-  // ページ読み込みとウィンドウリサイズ時に高さ調整を実行
-  window.onload = adjustCardWrapperHeight;
-  window.onresize = adjustCardWrapperHeight;
+    // 一旦全ての高さをリセット
+    heads.forEach(function (head) {
+      head.style.height = 'auto';
+    });
+
+    // 最大の高さを見つける
+    heads.forEach(function (head) {
+      if (head.offsetHeight > maxHeight) {
+        maxHeight = head.offsetHeight;
+      }
+    });
+
+    // 最大の高さを全てのheadに適用
+    heads.forEach(function (head) {
+      head.style.height = "".concat(maxHeight, "px");
+    });
+  }
+  function adjustHeadingsHeight() {
+    var headings = document.querySelectorAll('.blog-card__title');
+    var maxHeight = 0;
+
+    // 一旦全ての高さをリセット
+    headings.forEach(function (heading) {
+      heading.style.height = 'auto';
+    });
+
+    // 最大の高さを見つける
+    headings.forEach(function (heading) {
+      if (heading.offsetHeight > maxHeight) {
+        maxHeight = heading.offsetHeight;
+      }
+    });
+
+    // 最大の高さを全てのheadingに適用
+    headings.forEach(function (heading) {
+      heading.style.height = "".concat(maxHeight, "px");
+    });
+  }
+
+  // 使用例（ページ読み込みとウィンドウリサイズ時に高さ調整を実行）
+  window.onload = function () {
+    adjustCardWrapperHeight(); // voice-card__wrapperの高さを調整
+    adjustBlogCardHeadHeight(); // blog-card__headの高さを調整
+    adjustHeadingsHeight(); // 見出しの高さを調整
+  };
+
+  window.onresize = function () {
+    adjustCardWrapperHeight();
+    adjustBlogCardHeadHeight();
+    adjustHeadingsHeight();
+  };
 });
