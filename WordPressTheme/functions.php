@@ -47,8 +47,6 @@ function enqueue_custom_scripts() {
     // カスタムスクリプト
     wp_enqueue_script('custom-script', get_theme_file_uri('/assets/js/script.js'), array('jquery'), null, true);
 
-    // GSAPスクリプト
-    wp_enqueue_script('gsap-script', get_theme_file_uri('/assets/js/gsap.js'), array('gsap'), null, true);
 }
 
 // アクションフックに関数を追加

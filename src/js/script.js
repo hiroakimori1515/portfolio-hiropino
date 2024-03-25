@@ -487,7 +487,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             translate: ['(0 4rem)', 0],
           },
           {
-            duration: 2000,
+            duration: 1200,
             easing: 'ease',
             fill: 'forwards',
           }
