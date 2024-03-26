@@ -21,6 +21,8 @@
 
 .footer-nav__item {
   padding-left: rem(22);
+  display: flex;
+  flex-direction: column;
   background: url(../images/common/golf.svg);
   background-repeat: no-repeat;
   background-size: rem(18) rem(18);

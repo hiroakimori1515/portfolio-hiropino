@@ -20,13 +20,24 @@
 .popular-posts-card__image {
   width: 50%;
   overflow: hidden;
+  position: relative;
+}
+
+.popular-posts-card__image::before {
+  content: "";
+  display: block;
+  padding-top: 74.38%;
 }
 
 .popular-posts-card__image img {
-  aspect-ratio: 121 / 90;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform .6s ease;
-  height: auto;
 }
 
 

@@ -15,19 +15,30 @@
 
 .voice-card__image {
   min-width: rem(151);
+  position: relative;
   @include mq('md') {
     width: 38.135%;
     max-width: rem(305);
   }
 }
 
-.voice-card__image img {
-  aspect-ratio: 151 / 117;
-  object-fit: cover;
-  height: auto;
+.voice-card__image::before {
+  content: "";
+  display: block;
+  padding-top: 77.48%;
   @include mq('md') {
-    aspect-ratio: 180 / 140;
+    padding-top: 77.77%;
   }
+}
+
+.voice-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .voice-card__wrapper {

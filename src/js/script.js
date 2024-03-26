@@ -328,7 +328,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // ローディング中（薄緑スクリーン）
     loadingAreaGreen.animate(
       {
-        translate: ['0 100vh', '0 0', '0 -100vh']
+        translate: ['0 100vh', '0 0', '0 -100vh'],
       },
       {
         duration: 2000,
@@ -342,11 +342,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loadingText.animate([
       { opacity: 1, offset: 0 }, // 開始状態
       { opacity: 1, offset: 0.8 }, // 途中状態：透明度1を維持
-      { opacity: 0, offset: 1 } // 最終状態：透明度0
+      { opacity: 0, offset: 1 } ,// 最終状態：透明度0
     ], {
       duration: 1200,
       easing: 'ease',
-      fill: 'forwards'
+      fill: 'forwards',
     });
   });
 

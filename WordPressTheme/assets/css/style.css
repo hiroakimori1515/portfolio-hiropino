@@ -464,15 +464,26 @@ a {
 
 .blog-card__image {
 	overflow: hidden;
+	position: relative;
 	width: 100%;
+}
+
+.blog-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 66.77%;
 }
 
 .blog-card__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 301/201;
-	height: auto;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	transition: transform 0.6s ease;
+	width: 100%;
 }
 
 .blog-card__head {
@@ -728,14 +739,24 @@ a {
 }
 
 .campaign-card__image {
-	width: 100%;
+	position: relative;
+}
+
+.campaign-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 66.77%;
 }
 
 .campaign-card__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 301/201;
-	height: auto;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .campaign-card__inner {
@@ -1108,6 +1129,8 @@ a {
 	background-position: 0 1.25rem;
 	background-repeat: no-repeat;
 	background-size: 1.125rem 1.125rem;
+	display: flex;
+	flex-direction: column;
 	padding-left: 1.375rem;
 }
 
@@ -1871,13 +1894,25 @@ body.is-active {
 }
 
 .information__image {
+	position: relative;
 	width: 100%;
+}
+
+.information__image::before {
+	content: "";
+	display: block;
+	padding-top: 65.79%;
 }
 
 .information__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 345/227;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .information__content {
@@ -2264,12 +2299,24 @@ body.is-active {
 
 .page-information-card__image {
 	margin-top: 0.5rem;
+	position: relative;
+}
+
+.page-information-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 63.63%;
 }
 
 .page-information-card__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 297/189;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .page-information-tab__inner {
@@ -2701,15 +2748,26 @@ body.is-active {
 
 .popular-posts-card__image {
 	overflow: hidden;
+	position: relative;
 	width: 50%;
+}
+
+.popular-posts-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 74.38%;
 }
 
 .popular-posts-card__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 121/90;
-	height: auto;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	transition: transform 0.6s ease;
+	width: 100%;
 }
 
 .popular-posts-card__body {
@@ -2747,13 +2805,25 @@ body.is-active {
 }
 
 .price__image {
+	position: relative;
 	width: 100%;
+}
+
+.price__image::before {
+	content: "";
+	display: block;
+	padding-top: 65.79%;
 }
 
 .price__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 345/227;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .price__items {
@@ -3175,13 +3245,24 @@ body {
 
 .voice-card__image {
 	min-width: 9.4375rem;
+	position: relative;
+}
+
+.voice-card__image::before {
+	content: "";
+	display: block;
+	padding-top: 77.48%;
 }
 
 .voice-card__image img {
 	-o-object-fit: cover;
-	aspect-ratio: 151/117;
-	height: auto;
+	height: 100%;
+	left: 50%;
 	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .voice-card__wrapper {
@@ -3968,8 +4049,8 @@ select {
 	width: 50%;
 }
 
-.information__image img {
-	aspect-ratio: 540/356;
+.information__image::before {
+	padding-top: 65.92%;
 }
 
 .information__content {
@@ -4139,8 +4220,8 @@ select {
 	width: 50%;
 }
 
-.page-information-card__image img {
-	aspect-ratio: 492/313;
+.page-information-card__image::before {
+	padding-top: 63.61%;
 }
 
 .page-information-tab__menu {
@@ -4255,8 +4336,8 @@ select {
 	margin-top: 2.5rem;
 }
 
-.price__image img {
-	aspect-ratio: 492/746;
+.price__image::before {
+	padding-top: 151.62%;
 }
 
 .price__item {
@@ -4370,8 +4451,8 @@ select {
 	width: 38.135%;
 }
 
-.voice-card__image img {
-	aspect-ratio: 180/140;
+.voice-card__image::before {
+	padding-top: 77.77%;
 }
 
 .voice-card__wrapper {
