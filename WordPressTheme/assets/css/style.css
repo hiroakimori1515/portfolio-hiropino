@@ -448,7 +448,7 @@ a {
 }
 
 .blog-card:hover .blog-card__image img {
-	transform: scale(1.1);
+	transform: translate(-50%, -50%) scale(1.1);
 }
 
 .blog-card__link {
@@ -2747,7 +2747,7 @@ body.is-active {
 }
 
 .popular-posts-card:hover .popular-posts-card__image img {
-	transform: scale(1.1);
+	transform: translate(-50%, -50%) scale(1.1);
 }
 
 .popular-posts-card__inner {

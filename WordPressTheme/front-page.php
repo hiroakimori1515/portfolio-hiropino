@@ -255,7 +255,7 @@
       </div>
     </section>
 
-    <section id="price" class="price layout-price">
+    <section class="price layout-price">
       <div class="price__inner inner">
         <div class="price__title section-header fadein">
           <p class="section-header__entitle">Price</p>
@@ -287,7 +287,7 @@
             </li>
             <li class="price__item fadein">
               <div class="price__item-header">
-                <h3 id="price1" class="price__item-title">レッスン付き</h3>
+                <h3 class="price__item-title">レッスン付き</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -303,7 +303,7 @@
             </li>
             <li class="price__item fadein">
               <div class="price__item-header">
-                <h3 id="price2" class="price__item-title">限定プラン</h3>
+                <h3 class="price__item-title">限定プラン</h3>
               </div>
               <dl class="price__course">
               <?php
@@ -319,7 +319,7 @@
             </li>
             <li class="price__item fadein">
               <div class="price__item-header">
-                <h3 id="price3" class="price__item-title">グループ利用</h3>
+                <h3 class="price__item-title">グループ利用</h3>
               </div>
               <dl class="price__course">
               <?php
