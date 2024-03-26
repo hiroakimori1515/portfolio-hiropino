@@ -1,14 +1,14 @@
 <?php
 if (!is_404() && !is_page('contact') && !is_page('thanks')) {
 ?>
-  <section id="contact" class="contact layout-contact fadein">
+  <section id="contact" class="contact layout-contact">
     <div class="contact__inner inner">
       <div class="contact__contents">
         <div class="contact__left">
-          <div class="contact__logo">
+          <div class="contact__logo fadein">
             <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/MirageBeach_logo-contact.png" alt="MirageBeachのロゴ画像"></a>
           </div>
-          <div class="contact__info">
+          <div class="contact__info fadein">
             <div class="contact__meta">
               <p>北海道札幌市1-1</p>
               <p>TEL:<a href="tel:01200000000" class="contact__tel">0120-000-0000</a></p>
@@ -21,7 +21,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
           </div>
         </div>
         <div class="contact__right">
-          <div class="contact__title section-header">
+          <div class="contact__title section-header fadein">
             <p class="section-header__entitle section-header__entitle--contact">Contact</p>
             <h2 class="section-header__jatitle">お問合せ</h2>
             <p class="contact__message">ご予約・お問い合わせはコチラ</p>

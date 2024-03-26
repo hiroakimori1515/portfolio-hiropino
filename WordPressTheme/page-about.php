@@ -17,10 +17,10 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-about layout-page-common fadein">
+    <section class="page-about layout-page-common">
       <div class="page-about__inner inner">
         <div class="page-about__wrapper">
-          <div class="page-about__images">
+          <div class="page-about__images fadein">
             <div class="page-about__image-left">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about2.jpg" alt="ピンの上にゴルフボールをセットする男性の手">
             </div>
@@ -31,7 +31,7 @@
               </picture>
             </div>
           </div>
-          <div class="page-about__body">
+          <div class="page-about__body fadein">
             <h3 class="page-about__heading">Dive into
               <br>the Mirage</h3>
             <div class="page-about__content">
@@ -42,9 +42,9 @@
       </div>
     </section>
 
-    <section class="gallery layout-gallery fadein">
+    <section class="gallery layout-gallery">
       <div class="gallery__inner inner">
-        <div class="gallery__title section-header">
+        <div class="gallery__title section-header fadein">
           <p class="section-header__entitle"> Gallery</p>
           <h2 class="section-header__jatitle">フォト</h2>
         </div>
@@ -54,7 +54,7 @@
             foreach ($repeat_item as $fields ) {
             $image_url = wp_get_attachment_image_src($fields['gallery-image'] , 'full');
           ?>
-          <div class="gallery__slide js-modal-trigger">
+          <div class="gallery__slide js-modal-trigger fadein">
             <img src="<?php echo $image_url[0]; ?>" width="<?php echo $image_url[1]; ?>" height="<?php echo $image_url[2]; ?>" alt="海中の画像">
           </div>
           <?php } ?>

@@ -33,14 +33,14 @@
         </ul>
       </div>
     </div>
-    <section class="page-voice layout-page-voice fadein">
+    <section class="page-voice layout-page-voice">
       <div class="page-voice__inner inner">
         <div class="page-voice__container">
           <ul class="voice-cards">
           <?php if (have_posts(  )): ?>
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
-            <li class="voice-cards__item voice-card ">
+            <li class="voice-cards__item voice-card fadein">
               <div class="voice-card__link">
                 <div class="voice-card__inner">
                   <div class="voice-card__wrapper">
@@ -83,7 +83,7 @@
           <?php endif; ?>
           </ul>
         </div>
-        <div class="page-voice__pagenavi">
+        <div class="page-voice__pagenavi fadein">
           <div class="wp-pagenavi">
             <?php wp_pagenavi(); ?>
           </div>

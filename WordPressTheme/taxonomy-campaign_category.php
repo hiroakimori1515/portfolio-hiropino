@@ -33,14 +33,14 @@
         </ul>
       </div>
     </div>
-    <section class="page-campaign layout-page-campaign fadein">
+    <section class="page-campaign layout-page-campaign">
       <div class="page-campaign__inner inner">
         <div class="page-campaign__container">
           <ul class="page-campaign__items">
           <?php if (have_posts(  )): ?>
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
-            <li class="page-campaign__item campaign-card">
+            <li class="page-campaign__item campaign-card fadein">
               <div class="campaign-card__image">
                 <?php if(has_post_thumbnail( )): ?>
                 <?php the_post_thumbnail( ); ?>
@@ -80,7 +80,7 @@
           <?php endif; ?>
           </ul>
         </div>
-        <div class="page-campaign__pagenavi">
+        <div class="page-campaign__pagenavi fadein">
           <div class="wp-pagenavi">
             <?php wp_pagenavi(); ?>
           </div>

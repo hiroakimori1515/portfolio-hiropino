@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img-sp.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" alt="青い海と白い砂浜の画像">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" alt="グリーン場でパットを打つ3人の男性">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title">FAQ</h2>
@@ -17,15 +17,15 @@
    <?php get_template_part('parts/breadcrumb') ?>
 
   <main>
-    <section class="page-faq layout-page-common fadein">
+    <section class="page-faq layout-page-common ">
       <div class="page-faq__inner inner">
         <dl class="page-faq__accordion">
           <?php
           $fields = SCF::get_option_meta('theme-options', 'faq');
           foreach ($fields as $field_name => $fields_value) {
           ?>
-            <dt class="page-faq__question js-accordion"><?php echo esc_html($fields_value['question']); ?></dt>
-            <dd class="page-faq__answer"><?php echo esc_html($fields_value['answer']); ?></dd>
+            <dt class="page-faq__question js-accordion fadein"><?php echo esc_html($fields_value['question']); ?></dt>
+            <dd class="page-faq__answer fadein"><?php echo esc_html($fields_value['answer']); ?></dd>
           <?php } ?>
         </dl>
       </div>

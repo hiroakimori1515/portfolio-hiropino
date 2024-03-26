@@ -15,14 +15,14 @@
    <!-- パンくず -->
    <?php get_template_part('parts/breadcrumb') ?>
 
-    <article class="common-column layout-page-common fadein">
+    <article class="common-column layout-page-common">
       <div class="common-column__inner inner">
         <div class="common-column__content">
           <ul class="blog-cards blog-cards--page-blog">
           <?php if (have_posts(  )): ?>
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
-              <li class="blog-cards__item blog-card">
+              <li class="blog-cards__item blog-card fadein">
                 <a href="<?php the_permalink( ); ?>" class="blog-card__link">
                   <div class="blog-card__inner">
                     <div class="blog-card__image">
@@ -48,7 +48,7 @@
           <?php endif; ?>
           </ul>
           
-          <div class="common-column_pagenavi">
+          <div class="common-column_pagenavi fadein">
             <div class="wp-pagenavi">
             <?php wp_pagenavi(); ?>
             </div>
