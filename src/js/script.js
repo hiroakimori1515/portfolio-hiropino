@@ -163,18 +163,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   });
 
-  // モーダル
+  // モーダル表示
   jQuery(".js-modal-trigger").on("click", function() {
     var imageHtml = jQuery(this).find("img").prop("outerHTML");
-    jQuery(".gallery__overlay").html(imageHtml);
-    jQuery(".gallery__overlay").fadeIn(400);
+    jQuery(".gallery__overlay").html(imageHtml).css('display', 'flex'); // Flexboxを利用する
     jQuery('html, body').css('overflow', 'hidden');
   });
 
+  // モーダル非表示
   jQuery(".gallery__overlay").on("click", function() {
-    jQuery(".gallery__overlay").fadeOut(400);
+    jQuery(this).css('display', 'none');
     jQuery('html, body').removeAttr('style');
   });
+
 
   // informationタブメニュー
   $(function () {
