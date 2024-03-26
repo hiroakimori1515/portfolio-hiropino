@@ -305,6 +305,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+   // loading
+   const loadingAreaGray = document.querySelector('.loading');
+   const loadingAreaGreen = document.querySelector('.loading-screen');
+   const loadingText = document.querySelector('.loading p');
+
   window.addEventListener('load', () => {
     // ページロード直後にアニメーションを開始
   

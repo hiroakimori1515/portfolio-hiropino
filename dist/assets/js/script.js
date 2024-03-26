@@ -307,6 +307,10 @@ jQuery(function ($) {
     });
   });
 
+  // loading
+  var loadingAreaGray = document.querySelector('.loading');
+  var loadingAreaGreen = document.querySelector('.loading-screen');
+  var loadingText = document.querySelector('.loading p');
   window.addEventListener('load', function () {
     // ページロード直後にアニメーションを開始
 
