@@ -71,18 +71,15 @@
   background: rgba(32, 32, 32, 0.80);
   cursor: pointer;
   z-index: 1200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .gallery__overlay img {
-  // position: absolute;
-  // top: 0;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;

@@ -166,7 +166,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // モーダル表示
   jQuery(".js-modal-trigger").on("click", function() {
     var imageHtml = jQuery(this).find("img").prop("outerHTML");
-    jQuery(".gallery__overlay").html(imageHtml).css('display', 'flex'); // Flexboxを利用する
+    jQuery(".gallery__overlay").html(imageHtml);
     jQuery('html, body').css('overflow', 'hidden');
   });
 
