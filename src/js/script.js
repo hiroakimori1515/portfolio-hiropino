@@ -305,49 +305,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  // loading
-  const loadingAreaGray = document.querySelector('.loading');
-  const loadingAreaGreen = document.querySelector('.loading-screen');
-  const loadingText = document.querySelector('.loading p');
-
   window.addEventListener('load', () => {
-    // ローディング中（グレースクリーン）
+    // ページロード直後にアニメーションを開始
+  
+    // ローディング中（グレースクリーン）のアニメーション
     loadingAreaGray.animate(
-      {
-        opacity: [1, 0],
-        visibility: 'hidden',
-      },
-      {
-        duration: 2000,
-        delay: 1200,
-        easing: 'ease',
-        fill: 'forwards',
-      }
+      { opacity: [1, 0], visibility: 'hidden' },
+      { duration: 2000, delay: 1200, easing: 'ease', fill: 'forwards' }
     );
-
-    // ローディング中（薄緑スクリーン）
+  
+    // ローディング中（薄緑スクリーン）のアニメーション
     loadingAreaGreen.animate(
-      {
-        translate: ['0 100vh', '0 0', '0 -100vh'],
-      },
-      {
-        duration: 2000,
-        delay: 800,
-        easing: 'ease',
-        fill: 'forwards',
-      }
+      { translate: ['0 100vh', '0 0', '0 -100vh'] },
+      { duration: 2000, delay: 800, easing: 'ease', fill: 'forwards' }
     );
-
-    // ローディング中テキスト
-    loadingText.animate([
-      { opacity: 1, offset: 0 }, // 開始状態
-      { opacity: 1, offset: 0.8 }, // 途中状態：透明度1を維持
-      { opacity: 0, offset: 1 } ,// 最終状態：透明度0
-    ], {
-      duration: 1200,
-      easing: 'ease',
-      fill: 'forwards',
-    });
+  
+    // ローディング中テキストのアニメーション
+    loadingText.animate(
+      [{ opacity: 1, offset: 0 }, { opacity: 1, offset: 0.8 }, { opacity: 0, offset: 1 }],
+      { duration: 1200, easing: 'ease', fill: 'forwards' }
+    );
   });
 
   // voice-card__wrapperの高さ揃える
