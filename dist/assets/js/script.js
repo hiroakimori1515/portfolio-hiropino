@@ -161,16 +161,15 @@ jQuery(function ($) {
     });
   });
 
-  // モーダル表示
+  // モーダル
   jQuery(".js-modal-trigger").on("click", function () {
     var imageHtml = jQuery(this).find("img").prop("outerHTML");
     jQuery(".gallery__overlay").html(imageHtml);
+    jQuery(".gallery__overlay").fadeIn(400);
     jQuery('html, body').css('overflow', 'hidden');
   });
-
-  // モーダル非表示
   jQuery(".gallery__overlay").on("click", function () {
-    jQuery(this).css('display', 'none');
+    jQuery(".gallery__overlay").fadeOut(400);
     jQuery('html, body').removeAttr('style');
   });
 
@@ -308,49 +307,53 @@ jQuery(function ($) {
     });
   });
 
-  // loading
-  var loadingAreaGray = document.querySelector('.loading');
-  var loadingAreaGreen = document.querySelector('.loading-screen');
-  var loadingText = document.querySelector('.loading p');
   window.addEventListener('load', function () {
-    // ページロード直後にアニメーションを開始
+    var loadingAreaGray = document.querySelector('.loading');
+    var loadingAreaGreen = document.querySelector('.loading-screen');
+    var loadingText = document.querySelector('.loading p');
 
     // ローディング中（グレースクリーン）のアニメーション
-    loadingAreaGray.animate({
-      opacity: [1, 0],
-      visibility: 'hidden'
-    }, {
-      duration: 2000,
-      delay: 1200,
-      easing: 'ease',
-      fill: 'forwards'
-    });
+    if (loadingAreaGray) {
+      loadingAreaGray.animate({
+        opacity: [1, 0],
+        visibility: 'hidden'
+      }, {
+        duration: 2000,
+        delay: 1200,
+        easing: 'ease',
+        fill: 'forwards'
+      });
+    }
 
     // ローディング中（薄緑スクリーン）のアニメーション
-    loadingAreaGreen.animate({
-      translate: ['0 100vh', '0 0', '0 -100vh']
-    }, {
-      duration: 2000,
-      delay: 800,
-      easing: 'ease',
-      fill: 'forwards'
-    });
+    if (loadingAreaGreen) {
+      loadingAreaGreen.animate({
+        translate: ['0 100vh', '0 0', '0 -100vh']
+      }, {
+        duration: 2000,
+        delay: 800,
+        easing: 'ease',
+        fill: 'forwards'
+      });
+    }
 
     // ローディング中テキストのアニメーション
-    loadingText.animate([{
-      opacity: 1,
-      offset: 0
-    }, {
-      opacity: 1,
-      offset: 0.8
-    }, {
-      opacity: 0,
-      offset: 1
-    }], {
-      duration: 1200,
-      easing: 'ease',
-      fill: 'forwards'
-    });
+    if (loadingText) {
+      loadingText.animate([{
+        opacity: 1,
+        offset: 0
+      }, {
+        opacity: 1,
+        offset: 0.8
+      }, {
+        opacity: 0,
+        offset: 1
+      }], {
+        duration: 1200,
+        easing: 'ease',
+        fill: 'forwards'
+      });
+    }
   });
 
   // voice-card__wrapperの高さ揃える
