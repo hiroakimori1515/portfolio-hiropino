@@ -2246,7 +2246,7 @@ body.is-active {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.4375;
-	padding: 1rem;
+	padding: 1rem 3.375rem 1rem 1rem;
 	position: relative;
 }
 
