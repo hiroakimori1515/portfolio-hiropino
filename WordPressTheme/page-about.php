@@ -59,8 +59,8 @@
           </div>
           <?php } ?>
         </div>
-        <div class="gallery__overlay"></div>
       </div>
+      <div class="gallery__overlay"></div>
     </section>
 
 <?php get_footer(); ?>
