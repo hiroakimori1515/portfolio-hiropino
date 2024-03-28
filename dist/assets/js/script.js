@@ -355,7 +355,6 @@ jQuery(function ($) {
       });
     }
   });
-
   // voice-card__wrapperの高さ揃える
   function adjustCardWrapperHeight() {
     var wrappers = document.querySelectorAll('.voice-card__wrapper');
@@ -484,11 +483,15 @@ jQuery(function ($) {
   var animateFade = function animateFade(entries, obs) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        entry.target.animate({
-          opacity: [0, 1],
-          filter: ['blur(.4rem)', 'blur(0)'],
-          translate: ['(0 4rem)', 0]
+        entry.target.animate([{
+          opacity: 0,
+          filter: 'blur(0.4rem)',
+          transform: 'translateY(4rem)'
         }, {
+          opacity: 1,
+          filter: 'blur(0)',
+          transform: 'translateY(0)'
+        }], {
           duration: 1200,
           easing: 'ease',
           fill: 'forwards'

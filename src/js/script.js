@@ -334,7 +334,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       );
     }
   });
-  
   // voice-card__wrapperの高さ揃える
   function adjustCardWrapperHeight() {
     let wrappers = document.querySelectorAll('.voice-card__wrapper');
@@ -465,18 +464,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const animateFade = (entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.animate(
-          {
-            opacity: [0, 1],
-            filter: ['blur(.4rem)', 'blur(0)'],
-            translate: ['(0 4rem)', 0],
-          },
-          {
-            duration: 1200,
-            easing: 'ease',
-            fill: 'forwards',
-          }
-        );
+        entry.target.animate([
+          { opacity: 0, filter: 'blur(0.4rem)', transform: 'translateY(4rem)' },
+          { opacity: 1, filter: 'blur(0)', transform: 'translateY(0)' }
+        ], {
+          duration: 1200,
+          easing: 'ease',
+          fill: 'forwards',
+        });
         obs.unobserve(entry.target);
       }
     });
@@ -488,6 +483,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   fadeElements.forEach((fadeElement) => {
     fadeObserver.observe(fadeElement);
   });
+
 
 
 })
