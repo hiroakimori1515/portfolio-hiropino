@@ -2161,7 +2161,8 @@ body.is-active {
 	line-height: 1;
 	min-width: 12.5rem;
 	position: absolute;
-	top: 1.5rem;
+	top: -15rem;
+	white-space: nowrap;
 }
 
 .page-about__text {
