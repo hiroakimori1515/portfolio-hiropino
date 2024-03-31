@@ -48,7 +48,7 @@
               <a href="<?php echo esc_url( home_url( '/about/' ) );?>">私たちについて</a>
             </li>
             <li class="sp-nav__item">
-              <a href="<?php echo esc_url( home_url( '/information/' ) );?>">ダイビング情報</a>
+              <a href="<?php echo esc_url( home_url( '/information/' ) );?>">プレイ情報</a>
               <ul>
                 <li><a href="<?php echo esc_url( home_url( '/information?tab=lesson' ) );?>">レッスン付き</a></li>
                 <li><a href="<?php echo esc_url( home_url( '/information?tab=exclusive' ) );?>">限定プラン</a></li>

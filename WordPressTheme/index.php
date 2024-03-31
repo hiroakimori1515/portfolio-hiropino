@@ -128,7 +128,7 @@
       <div class="information__inner inner">
         <div class="information__title section-header fadein">
           <p class="section-header__entitle">Information</p>
-          <h2 class="section-header__jatitle">レッスン情報</h2>
+          <h2 class="section-header__jatitle">プレイ情報</h2>
         </div>
         <div class="information__contents">
           <div class="information__wrapper fadein">
