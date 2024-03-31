@@ -155,7 +155,6 @@ function setPostViews($postID) {
     update_post_meta($postID, $count_key, $count);
   }
 }
-remove_action( 'wp_head', 10, 0);
 
 function cms_excerpt_more() {
   return '...';

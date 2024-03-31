@@ -5,19 +5,19 @@
       <h3 class="sidebar__title">人気記事</h3>
       <div class="sidebar__body">
         <ul class="sidebar__items">
-        <?php
-        setPostViews(get_the_ID());
-        $args = array(
-          'post_type' => 'post',
-          'meta_key' => 'post_views_count',
-          'orderby' => 'meta_value_num',
-          'posts_per_page' => 3,
-          'order'=>'DESC',
-        );
-        $the_view_query = new WP_Query( $args );
-        if ($the_view_query->have_posts()):
-          while($the_view_query->have_posts()): $the_view_query->the_post();
-        ?>
+          <?php
+            setPostViews(get_the_ID());
+            $args = array(
+              'post_type' => 'post',
+              'meta_key' => 'post_views_count',
+              'orderby' => 'meta_value_num',
+              'posts_per_page' => 3,
+              'order'=>'DESC',
+            );
+            $the_view_query = new WP_Query( $args );
+            if ($the_view_query->have_posts()):
+              while($the_view_query->have_posts()): $the_view_query->the_post();
+          ?>
           <li class="sidebar__item popular-posts-card">
             <a href="<?php the_permalink(); ?>" class="popular-posts-card__link">
               <div class="popular-posts-card__inner">
@@ -35,9 +35,9 @@
               </div>
             </a>
           </li>
-        <?php endwhile; ?>
-        <?php endif; ?>
-        <?php wp_reset_postdata(); ?>
+          <?php endwhile; ?>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
         </ul>
       </div>
     </div>
@@ -45,13 +45,13 @@
       <h3 class="sidebar__title">口コミ</h3>
       <div class="sidebar__body">
         <ul class="sidebar__items">
-        <?php
-            $args = array('post_type' => 'voice',
-            'posts_per_page' => 1); 
-            $the_query = new WP_Query($args); 
-        ?>
-        <?php if($the_query->have_posts()): ?>
-        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+          <?php
+              $args = array('post_type' => 'voice',
+              'posts_per_page' => 1); 
+              $the_query = new WP_Query($args); 
+          ?>
+          <?php if($the_query->have_posts()): ?>
+          <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="sidebar__item">
             <div class="voice-card">
               <div class="sidebar__voice-image">
