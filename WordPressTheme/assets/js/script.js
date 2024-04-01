@@ -505,4 +505,21 @@ jQuery(function ($) {
   fadeElements.forEach(function (fadeElement) {
     fadeObserver.observe(fadeElement);
   });
+
+  // セレクトへタイトルを反映
+  jQuery(document).ready(function ($) {
+    $('.select-button').on('click', function () {
+      // クリックされたカードのdata-campaign-titleを取得
+      var title = $(this).closest('.page-campaign__item').data('campaign-title');
+
+      // セレクトボックスの選択肢をループし、該当するタイトルを選択状態にする
+      $('#your-select-field-id option').each(function () {
+        if ($(this).text() === title) {
+          $(this).prop('selected', true);
+        }
+      });
+
+      // 必要に応じて、Contact Form 7のフォームを表示する処理をここに追加
+    });
+  });
 });

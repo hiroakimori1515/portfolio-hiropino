@@ -738,12 +738,6 @@ a {
 	z-index: 1;
 }
 
-.campaign-card__link {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-
 .campaign-card__image {
 	position: relative;
 }
