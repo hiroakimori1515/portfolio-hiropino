@@ -527,36 +527,16 @@ textarea {
 .wpcf7-spinner {
 	visibility: visible;
 	display: inline;
-	// background-color:none;
-	// opacity: 0;
-	// width: 0;
-	// height: 0;
-	// border: none;
-	// border-radius: 0;
-	// padding: 0;
 	margin: 0;
-	// position: relative;
 }
 
 .wpcf7-spinner::before {
 	display: none;
 }
 
-
 /* CF7スタイルをリセットまたは調整 */
 .wpcf7 {
 	margin: 0; /* 例：既存のマージンをリセット */
-}
-
-/* フォームの各要素に対するスタイル調整 */
-.wpcf7 input[type="text"],
-.wpcf7 textarea {
-	/* あなたのスタイリング */
-}
-
-/* その他の要素に対するスタイル調整 */
-.wpcf7 .form__item {
-	/* あなたのスタイリング */
 }
 
 

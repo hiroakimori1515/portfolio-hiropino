@@ -738,6 +738,12 @@ a {
 	z-index: 1;
 }
 
+.campaign-card__link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 .campaign-card__image {
 	position: relative;
 }
@@ -1725,17 +1731,6 @@ textarea {
 
 .wpcf7 {
 	margin: 0; /* 例：既存のマージンをリセット */
-}
-
-/* フォームの各要素に対するスタイル調整 */
-
-.wpcf7 input[type=text],
-.wpcf7 textarea { /* あなたのスタイリング */
-}
-
-/* その他の要素に対するスタイル調整 */
-
-.wpcf7 .form__item { /* あなたのスタイリング */
 }
 
 .gallery__inner {
@@ -2996,13 +2991,16 @@ body.is-active {
 	height: auto;
 }
 
+.sidebar__voice-body {
+	padding: 1rem 1.4375rem 1.5rem;
+}
+
 .sidebar__voice-tag {
 	color: #0D2936;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.75rem;
 	font-weight: normal;
 	line-height: 1.5;
-	margin-top: 1rem;
 }
 
 .sidebar__voice-title {

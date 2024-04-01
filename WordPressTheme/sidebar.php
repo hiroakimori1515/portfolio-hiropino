@@ -53,7 +53,7 @@
           <?php if($the_query->have_posts()): ?>
           <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
           <li class="sidebar__item">
-            <div class="voice-card">
+            <div class="sidebar__voice-card">
               <div class="sidebar__voice-image">
                 <?php if(has_post_thumbnail( )): ?>
                 <?php the_post_thumbnail( ); ?>
@@ -61,15 +61,17 @@
                 <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
                 <?php endif; ?>
               </div>
-              <div class="sidebar__voice-tag">
-              <?php 
-                $tags = get_the_tags();
-                foreach ( $tags as $tag ) {
-                  echo $tag->name;
-                }
-              ?>
+              <div class="sidebar__voice-body">
+                <div class="sidebar__voice-tag">
+                <?php 
+                  $tags = get_the_tags();
+                  foreach ( $tags as $tag ) {
+                    echo $tag->name;
+                  }
+                ?>
+                </div>
+                <h4 class="sidebar__voice-title"><?php the_title(); ?></h4>
               </div>
-              <h4 class="sidebar__voice-title"><?php the_title(); ?></h4>
             </div>
           </li>
           <?php endwhile; ?>

@@ -61,8 +61,11 @@
   height: auto;
 }
 
+.sidebar__voice-body {
+  padding: rem(16) rem(23) rem(24);
+}
+
 .sidebar__voice-tag {
-  margin-top: rem(16);
   font-family: $base-font-family;
   font-size: rem(12);
   font-weight: normal;
