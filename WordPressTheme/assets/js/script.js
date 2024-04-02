@@ -506,20 +506,41 @@ jQuery(function ($) {
     fadeObserver.observe(fadeElement);
   });
 
-  // セレクトへタイトルを反映
+  // キャンペーんタイトルをセレクトへ反映
   jQuery(document).ready(function ($) {
-    $('.select-button').on('click', function () {
-      // クリックされたカードのdata-campaign-titleを取得
-      var title = $(this).closest('.page-campaign__item').data('campaign-title');
+    // '.button .select-button' クラスを持つ要素がクリックされたら
+    $('.select-button').click(function (e) {
+      e.preventDefault(); // デフォルトの動作を阻止
 
-      // セレクトボックスの選択肢をループし、該当するタイトルを選択状態にする
-      $('#your-select-field-id option').each(function () {
-        if ($(this).text() === title) {
-          $(this).prop('selected', true);
-        }
-      });
+      // クリックされた要素から最も近い '.campaign-card' 要素のタイトルを取得
+      var title = $(this).closest('.campaign-card').data('campaign-title');
 
-      // 必要に応じて、Contact Form 7のフォームを表示する処理をここに追加
+      // セッションストレージにタイトルを保存
+      sessionStorage.setItem('selectedCampaignTitle', title);
+      console.log('SelectedCampaignTitle:', title);
+
+      // 明示的にページ遷移
+      window.location.href = 'https://www.portfolio.hiropino.com/contact/'; // 遷移先のURLを設定
+
+      // セレクトボックスの更新処理をここで呼び出すか、
+      // 他の方法でフォームが表示された際にセレクトボックスを更新
+    });
+
+    // フォーム表示時（または適切なタイミングで）にセレクトボックスを更新
+    jQuery(document).ready(function ($) {
+      // セッションストレージからタイトルを取得
+      var selectedTitle = sessionStorage.getItem('selectedCampaignTitle');
+      if (selectedTitle) {
+        // タイトルを新しいオプションとしてセレクトボックスに追加し、選択状態にする
+        $('#select-job').append($('<option>', {
+          value: selectedTitle,
+          text: selectedTitle,
+          selected: true
+        }));
+      } else {
+        // タイトルが存在しない場合は、デフォルトの選択肢（例えば空白）を選択状態にする
+        $('#select-job').val('').change();
+      }
     });
   });
 });

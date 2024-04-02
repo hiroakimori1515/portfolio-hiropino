@@ -37,7 +37,7 @@
           <?php if (have_posts(  )): ?>
             <?php while(have_posts(  )): ?>
               <?php the_post(  ); ?>
-            <li class="page-campaign__item campaign-card fadein" data-campaign-title="<?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;>">(本キャンペーンは終了しました）</span>';} ?>">
+            <li class="page-campaign__item campaign-card fadein" data-campaign-title="<?php the_title(); ?>">
               <div class="campaign-card__image">
                 <?php if(has_post_thumbnail( )): ?>
                 <?php the_post_thumbnail( ); ?>
@@ -54,7 +54,7 @@
                     echo '<p class="campaign-card__category">' . esc_html($term->name) . '</p>';
                 }
                 ?>
-                  <h3 class="campaign-card__title campaign-card__title--page-campaign"><?php the_title(); if(!get_field('campaign')) { echo '<br><span style="color:red;>">(本キャンペーンは終了しました）</span>';} ?></h3>
+                  <h3 class="campaign-card__title campaign-card__title--page-campaign"><?php the_title(); ?></h3>
                 </div>
                 <div class="campaign-card__body campaign-card__body--page-campaign">
                   <p class="campaign-card__menu-title"><?php the_field('campaign_1'); ?></p>
@@ -68,7 +68,7 @@
                   <p class="campaign-card__message u-desktop">ご予約・お問い合わせはコチラ</p>
                   <object class="campaign-card__button u-desktop">
                   <?php $campaign_url = esc_url(get_field('campaign_6')); ?>
-                  <a href="<?php echo esc_url( home_url( '/contact/' ) ) ; ?>" class="button select-button" target="_blank">Contact us<span></span></a>
+                  <a href="<?php echo esc_url( home_url( '/contact/' ) ) ; ?>" class="button select-button">Contact us<span></span></a>
                   </object>
                 </div>
               </div>
