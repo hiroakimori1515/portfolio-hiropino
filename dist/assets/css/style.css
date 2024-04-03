@@ -608,6 +608,15 @@ a {
 	z-index: 1;
 }
 
+.button.shiny {
+	animation: shine 20s infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	background: #004c42;
+	background: linear-gradient(-45deg, #004c42 50%, #00b29b 60%, #004c42 70%);
+	background-size: 600% 100%;
+}
+
 .button--page-404 {
 	background-color: #FFFFFF;
 	border: 1px solid #FFFFFF;
@@ -1586,6 +1595,15 @@ textarea {
 	position: relative;
 	text-align: center;
 	z-index: 1;
+}
+
+.form__item-button.shiny {
+	animation: shine 20s infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	background: #004c42;
+	background: linear-gradient(-45deg, #004c42 50%, #00b29b 60%, #004c42 70%);
+	background-size: 600% 100%;
 }
 
 .form__item-button::after {
@@ -4545,6 +4563,38 @@ html {
 
 html {
 	font-size: 4.2666666667vw;
+}
+
+}
+
+@keyframes shine {
+
+0% {
+	background-position-x: 400%;
+}
+
+50% {
+	background-position-x: 0%;
+}
+
+100% {
+	background-position-x: -400%;
+}
+
+}
+
+@keyframes shine {
+
+0% {
+	background-position-x: 400%;
+}
+
+50% {
+	background-position-x: 0%;
+}
+
+100% {
+	background-position-x: -400%;
 }
 
 }

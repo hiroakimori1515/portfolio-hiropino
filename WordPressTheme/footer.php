@@ -26,7 +26,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
             <h2 class="section-header__jatitle">お問合せ</h2>
             <p class="contact__message">ご予約・お問い合わせはコチラ</p>
             <div class="contact__button">
-              <a href="<?php echo esc_url( home_url( '/contact/' ) );?>" class="button">Contact us<span></span></a>
+              <a href="<?php echo esc_url( home_url( '/contact/' ) );?>" class="button shiny">Contact us<span></span></a>
             </div>
           </div>
         </div>

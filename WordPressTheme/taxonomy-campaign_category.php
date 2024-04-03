@@ -71,7 +71,7 @@
                     <p class="campaign-card__message u-desktop">ご予約・お問い合わせはコチラ</p>
                     <object class="campaign-card__button u-desktop">
                       <?php $campaign_url = esc_url(get_field('campaign_6')); ?>
-                      <a href="<?php echo esc_url( home_url( '/contact/' ) ) ; ?>" class="button select-button">Contact us<span></span></a>
+                      <a href="<?php echo esc_url( home_url( '/contact/' ) ) ; ?>" class="button shiny select-button">Contact us<span></span></a>
                     </object>
                   </div>
                 </div>

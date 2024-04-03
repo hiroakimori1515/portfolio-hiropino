@@ -1,7 +1,7 @@
 <?php
 function enqueue_styles_and_scripts() {
     // Favicon
-    wp_enqueue_style('site-favicon', get_theme_file_uri('/assets/images/common/favicon.jpg'), array(), null, 'all');
+    wp_enqueue_style('site-favicon', get_theme_file_uri('/assets/images/common/favicon.svg'), array(), null, 'all');
 
     // Google Font - Gotu
     wp_register_style('google-font-gotu', 'https://fonts.googleapis.com/css2?family=Gotu&display=swap');

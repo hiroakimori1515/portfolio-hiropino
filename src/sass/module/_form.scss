@@ -259,10 +259,6 @@ textarea {
   max-width: rem(600);
 }
 
-.form {
-
-}
-
 .form__item {
   display: grid;
   grid-template-columns: 1fr;
@@ -395,10 +391,36 @@ textarea {
   text-align: center;
   position: relative;
   z-index: 1;
-  @include mq('md') {
-    margin-top: rem(42);
+	@include mq('md') {
+		margin-top: rem(42);
+	}
+	&.shiny {
+    background: $main;
+    background: linear-gradient(
+      -45deg,
+      $main 50%,
+      lighten($main, 20%) 60%,
+      $main 70%
+    );
+    background-size: 600% 100%;
+    animation: shine 20s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
   }
+	@keyframes shine {
+		0% {
+			background-position-x: 400%;
+		}
+		50% {
+			background-position-x: 0%;
+		}
+		100% {
+			background-position-x: -400%;
+		}
+	}
 }
+
+
 
 .form__item-button::after {
 	content: "";

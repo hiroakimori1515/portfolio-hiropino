@@ -78,7 +78,7 @@
           <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="sidebar__button">
-          <a href="<?php echo esc_url( home_url( '/voice/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/voice/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </div>
@@ -120,7 +120,7 @@
         <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="sidebar__button">
-          <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </div>

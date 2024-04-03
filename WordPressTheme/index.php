@@ -87,7 +87,7 @@
           <div class="swiper-button-next"></div>
         </div>
         <div class="campaign__button fadein">
-          <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </section>
@@ -116,7 +116,7 @@
             <div class="about__content fadein">
               <p class="about__text">Mirage Beachは、蜃気楼（しんきろう）のようなビーチのゴルフリゾート。<br>蜃気楼（ミラージュ）は、光の屈折によって遠くにある物体が近くに見えたり、実際には存在しない景色が見えたりする現象を指します。<br>まるで夢のように美しく、幻想的な雰囲気を持つ、唯一無二のゴルフリゾートです。</p>
               <div class="about__button">
-                <a href="<?php echo esc_url( home_url( '/about/' ) );?>" class="button">View more<span></span></a>
+                <a href="<?php echo esc_url( home_url( '/about/' ) );?>" class="button shiny">View more<span></span></a>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@
             <h3 class="information__heading">ラウンドレッスン</h3>
             <p class="information__text">当ゴルフ場は、初心者から経験豊富なゴルファーまで、すべての方が安心してラウンドレッスンを受けられる環境を整えています。<br>プロの指導のもと、安全かつ快適な環境でラウンドレッスンを提供し、ゴルフスキルの向上を全面的にサポートいたします。</p>
             <div class="information__button">
-              <a href="<?php echo esc_url( home_url( '/information/' ) );?>" class="button">View more<span></span></a>
+              <a href="<?php echo esc_url( home_url( '/information/' ) );?>" class="button shiny">View more<span></span></a>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
           <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="blog__button fadein">
-          <a href="<?php echo esc_url( home_url( '/blog/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/blog/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </section>
@@ -250,7 +250,7 @@
           <?php wp_reset_postdata(); endif; ?>
         </ul>
         <div class="voice__button fadein">
-          <a href="<?php echo esc_url( home_url( '/voice/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/voice/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </section>
@@ -336,7 +336,7 @@
           </ul>
         </div>
         <div class="price__button fadein">
-          <a href="<?php echo esc_url( home_url( '/price/' ) );?>" class="button">View more<span></span></a>
+          <a href="<?php echo esc_url( home_url( '/price/' ) );?>" class="button shiny">View more<span></span></a>
         </div>
       </div>
     </section>
