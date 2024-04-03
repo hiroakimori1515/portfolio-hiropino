@@ -20,6 +20,18 @@
     background-image: url(../images/common/voice-golf_left.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    animation: sway 3s infinite;
+    @keyframes sway {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   }
 }
 
@@ -35,6 +47,18 @@
     background-image: url(../images/common/voice-golf_right.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    animation: sway 3s infinite;
+    @keyframes sway {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   }
 }
 

@@ -17,6 +17,18 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 5;
+    animation: sway 3s infinite;
+    @keyframes sway {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
   }
 }
 

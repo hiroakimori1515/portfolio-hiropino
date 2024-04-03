@@ -575,6 +575,7 @@ a {
 }
 
 .breadcrumb::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/price-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1010,6 +1011,7 @@ a {
 }
 
 .contact::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/contact-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -3615,6 +3617,7 @@ html {
 }
 
 .about::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/about-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -3705,6 +3708,7 @@ html {
 }
 
 .blog::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/blog-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -4125,6 +4129,7 @@ select {
 }
 
 .page-about::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/about-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -4340,6 +4345,7 @@ select {
 }
 
 .price::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/price-golf.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -4512,6 +4518,7 @@ select {
 }
 
 .voice::before {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/voice-golf_left.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -4525,6 +4532,7 @@ select {
 }
 
 .voice::after {
+	animation: sway 3s infinite;
 	background-image: url(../images/common/voice-golf_right.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -4567,6 +4575,22 @@ html {
 
 }
 
+@keyframes sway {
+
+0% {
+	transform: translateX(0);
+}
+
+50% {
+	transform: translateX(-5px);
+}
+
+100% {
+	transform: translateX(0);
+}
+
+}
+
 @keyframes shine {
 
 0% {
@@ -4579,6 +4603,22 @@ html {
 
 100% {
 	background-position-x: -400%;
+}
+
+}
+
+@keyframes sway {
+
+0% {
+	transform: translateX(0);
+}
+
+50% {
+	transform: translateX(-5px);
+}
+
+100% {
+	transform: translateX(0);
 }
 
 }

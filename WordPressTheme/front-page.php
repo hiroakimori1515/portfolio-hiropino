@@ -83,8 +83,8 @@
               <?php wp_reset_postdata(); endif; ?>
             </ul>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev fadein"></div>
+          <div class="swiper-button-next fadein"></div>
         </div>
         <div class="campaign__button fadein">
           <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>" class="button shiny">View more<span></span></a>

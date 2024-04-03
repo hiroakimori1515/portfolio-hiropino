@@ -24,11 +24,23 @@
   width: rem(136);
   height: rem(88);
   z-index: -1;
+  animation: sway 3s infinite;
   @include mq('md') {
     background-image: url(../images/common/price-golf.svg);
     top: rem(32);
     width: rem(301);
     height: rem(192);
+  }
+  @keyframes sway {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 

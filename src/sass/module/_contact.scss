@@ -15,12 +15,24 @@
   background-image: url(../images/common/contact-golf.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  animation: sway 3s infinite;
   @include mq('md') {
     background-image: url(../images/common/contact-golf.svg);
     top: rem(-160);
     right: calc(50% - min(50vw, 42rem));
     width: rem(320);
     height: rem(240);
+  }
+  @keyframes sway {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
