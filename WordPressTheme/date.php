@@ -7,7 +7,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg.jpg" alt="夕陽の中プレイするゴルファー">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">Blog</h2>
+        <h2 class="sub-mv__title" id="text">Blog</h2>
       </div>
     </div>
   </div>

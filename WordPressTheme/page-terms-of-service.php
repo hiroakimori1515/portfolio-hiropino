@@ -7,7 +7,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sitemap-img.jpg" alt="上空から見たゴルフコースの全貌">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title sub-mv__title--page-terms-of-service">Terms of Service</h2>
+        <h2 class="sub-mv__title sub-mv__title--page-terms-of-service" id="text">Terms of Service</h2>
       </div>
     </div>
   </div>

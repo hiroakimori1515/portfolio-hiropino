@@ -525,6 +525,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  // SplitType
+  const text = new SplitType('#text');
+
+  // GSAP アニメーション
+  gsap.to(".char", {
+    opacity: 1, // テキストを徐々に表示
+    y: 0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: 0.5,
+    ease: "Power2.out",
+  });
 
 
 })

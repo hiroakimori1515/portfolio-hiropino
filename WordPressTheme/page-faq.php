@@ -8,7 +8,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" alt="グリーン場でパットを打つ3人の男性">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">FAQ</h2>
+        <h2 class="sub-mv__title" id="text">FAQ</h2>
       </div>
     </div>
   </div>

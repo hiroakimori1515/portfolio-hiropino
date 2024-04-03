@@ -8,7 +8,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img.jpg" alt="パッとを打つ前にセットした際のパターとボール">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">About us</h2>
+        <h2 class="sub-mv__title" id="text">About us</h2>
       </div>
     </div>
   </div>

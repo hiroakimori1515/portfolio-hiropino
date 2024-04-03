@@ -7,7 +7,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-img.jpg" alt="バンカーに入ったボールと打つ準備をしたアイアン">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">Information</h2>
+        <h2 class="sub-mv__title" id="text">Information</h2>
       </div>
     </div>
   </div>

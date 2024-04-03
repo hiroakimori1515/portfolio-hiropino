@@ -8,7 +8,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" alt="上空から見た海とゴルフコース">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">Voice</h2>
+        <h2 class="sub-mv__title" id="text">Voice</h2>
       </div>
     </div>
   </div>

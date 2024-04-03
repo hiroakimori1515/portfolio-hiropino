@@ -35,6 +35,9 @@ function enqueue_custom_scripts() {
     // GSAP
     wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js', array(), '3.11.0', true);
 
+    // SplitType
+    wp_enqueue_script('split-type', 'https://unpkg.com/split-type', array(), null, true);
+
     // jQuery
     wp_enqueue_script('jquery');
 

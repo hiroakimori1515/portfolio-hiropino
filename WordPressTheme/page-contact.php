@@ -7,7 +7,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" alt="上空からとらえたゴルフコースの全容">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">Contact</h2>
+        <h2 class="sub-mv__title" id="text">Contact</h2>
       </div>
     </div>
   </div>

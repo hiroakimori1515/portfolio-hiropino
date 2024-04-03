@@ -7,7 +7,7 @@
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sitemap-img.jpg" alt="上空から見たゴルフコースの全貌">
       </picture>
       <div class="sub-mv__header js-mv-header">
-        <h2 class="sub-mv__title">Site MAP</h2>
+        <h2 class="sub-mv__title" id="text">Site MAP</h2>
       </div>
     </div>
   </div>
