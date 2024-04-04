@@ -3,8 +3,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-img.jpg" alt="バンカーに入ったボールと打つ準備をしたアイアン">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information-img_pc.jpg" alt="バンカーに入ったボールと打つ準備をしたアイアン">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Information</h2>

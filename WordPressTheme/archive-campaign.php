@@ -4,8 +4,8 @@
   <div class="sub-mv bg-campaign">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img.jpg" alt="青い海の前に赤いピンフラッグが靡いているゴルフコース">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img_pc.jpg" alt="青い海の前に赤いピンフラッグが靡いているゴルフコース">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Campaign</h2>
@@ -39,10 +39,14 @@
               <?php the_post(  ); ?>
             <li class="page-campaign__item campaign-card fadein" data-campaign-title="<?php the_title(); ?>">
               <div class="campaign-card__image">
-                <?php if(has_post_thumbnail( )): ?>
-                <?php the_post_thumbnail( ); ?>
+                <?php if(has_post_thumbnail()): ?>
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                        srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                <?php the_post_thumbnail_url('large'); ?> 1024w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                        alt="">
                 <?php else: ?>
-                <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                 <?php endif; ?>
               </div>
               <div class="campaign-card__inner campagin-card__inner--page-campaign">

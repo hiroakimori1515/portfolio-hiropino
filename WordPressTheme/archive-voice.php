@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img.jpg" alt="上空から見た海とゴルフコース">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice-img_pc.jpg" alt="上空から見た海とゴルフコース">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Voice</h2>
@@ -42,10 +42,14 @@
                 <div class="voice-card__inner">
                   <div class="voice-card__wrapper">
                     <div class="voice-card__image js-colorbox">
-                      <?php if(has_post_thumbnail( )): ?>
-                      <?php the_post_thumbnail( ); ?>
+                      <?php if(has_post_thumbnail()): ?>
+                          <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                              srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                      <?php the_post_thumbnail_url('large'); ?> 1024w"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                              alt="">
                       <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                       <?php endif; ?>
                     </div>
                     <div class="voice-card__head">

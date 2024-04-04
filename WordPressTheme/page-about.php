@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img.jpg" alt="パッとを打つ前にセットした際のパターとボール">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-img_pc.jpg" alt="パッとを打つ前にセットした際のパターとボール">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">About us</h2>
@@ -22,12 +22,12 @@
         <div class="page-about__wrapper">
           <div class="page-about__images fadein">
             <div class="page-about__image-left">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about2.jpg" alt="ピンの上にゴルフボールをセットする男性の手">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about2.jpg" alt="ピンの上にゴルフボールをセットする男性の手">
             </div>
             <div class="page-about__image-right">
               <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" media="(max-width: 767px)" >
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" alt="グリーン手前に深いバンカーのあるコース">
+                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1_sp.jpg" media="(max-width: 767px)" >
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1_pc.jpg" alt="グリーン手前に深いバンカーのあるコース">
               </picture>
             </div>
           </div>

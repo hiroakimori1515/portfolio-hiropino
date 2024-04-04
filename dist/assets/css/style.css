@@ -3213,7 +3213,6 @@ body.is-active {
 }
 
 .char {
-	opacity: 0;
 	transform: translateY(-100px);
 	transition: transform 0.5s;
 }

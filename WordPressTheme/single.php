@@ -30,10 +30,14 @@
             <time class="single__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y/n/j'); ?></time>
             <h2 class="single__title"><?php the_title(); ?></h2>
             <div class="single__image">
-              <?php if(has_post_thumbnail( )): ?>
-              <?php the_post_thumbnail( ); ?>
+              <?php if(has_post_thumbnail()): ?>
+                  <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                      srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                              <?php the_post_thumbnail_url('large'); ?> 1024w"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                      alt="">
               <?php else: ?>
-              <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="<?php the_title(); ?>のアイキャッチ画像">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
               <?php endif; ?>
             </div>
             <div class="single__content">

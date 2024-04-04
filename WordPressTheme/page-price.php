@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img.jpg" alt="青い芝から見た青い空">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price-img_pc.jpg" alt="青い芝から見た青い空">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Price</h2>

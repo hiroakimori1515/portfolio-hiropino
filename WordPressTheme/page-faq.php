@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img.jpg" alt="グリーン場でパットを打つ3人の男性">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-img_pc.jpg" alt="グリーン場でパットを打つ3人の男性">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">FAQ</h2>

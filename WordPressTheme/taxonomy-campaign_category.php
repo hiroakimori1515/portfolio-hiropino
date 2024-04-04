@@ -4,8 +4,8 @@
   <div class="sub-mv bg-campaign">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img.jpg" alt="青い海の前に赤いピンフラッグが靡いているゴルフコース">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/campaign-img_pc.jpg" alt="青い海の前に赤いピンフラッグが靡いているゴルフコース">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Campaign</h2>

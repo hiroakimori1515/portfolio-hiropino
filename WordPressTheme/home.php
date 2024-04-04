@@ -3,7 +3,7 @@
 <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg.jpg" media="(max-width: 767px)" >
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg_sp.jpg" media="(max-width: 767px)" >
         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-bg.jpg" alt="夕陽の中プレイするゴルファー">
       </picture>
       <div class="sub-mv__header js-mv-header">
@@ -26,10 +26,14 @@
                 <a href="<?php the_permalink( ); ?>" class="blog-card__link">
                   <div class="blog-card__inner">
                     <div class="blog-card__image">
-                      <?php if(has_post_thumbnail( )): ?>
-                      <?php the_post_thumbnail( ); ?>
+                      <?php if(has_post_thumbnail()): ?>
+                          <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                              srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                      <?php the_post_thumbnail_url('large'); ?> 1024w"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                              alt="">
                       <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                       <?php endif; ?>
                     </div>
                     <div class="blog-card__head">

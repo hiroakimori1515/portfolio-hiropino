@@ -52,11 +52,15 @@
               <li class="campaign__slide swiper-slide fadein">
                 <div class="campaign-card">
                   <div class="campaign-card__image">
-                  <?php if(has_post_thumbnail( )): ?>
-                  <?php the_post_thumbnail( ); ?>
-                  <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
-                  <?php endif; ?>
+                    <?php if(has_post_thumbnail()): ?>
+                        <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                            srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                    <?php the_post_thumbnail_url('large'); ?> 1024w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                            alt="">
+                    <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
+                    <?php endif; ?>
                   </div>
                   <div class="campaign-card__inner">
                     <div class="campaign-card__head">
@@ -105,8 +109,8 @@
             </div>
             <div class="about__image-right fadein">
               <picture>
-                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" media="(max-width: 767px)" >
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1.jpg" alt="グリーン手前に深いバンカーのあるコース">
+                <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1_sp.jpg" media="(max-width: 767px)" >
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about1_pc.jpg" alt="グリーン手前に深いバンカーのあるコース">
               </picture>
             </div>
           </div>
@@ -165,10 +169,14 @@
             <a href="<?php the_permalink(); ?>" class="blog-card__link">
               <div class="blog-card__inner">
                 <div class="blog-card__image">
-                  <?php if(has_post_thumbnail( )): ?>
-                  <?php the_post_thumbnail( ); ?>
+                  <?php if(has_post_thumbnail()): ?>
+                      <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                          srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                  <?php the_post_thumbnail_url('large'); ?> 1024w"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                          alt="">
                   <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                   <?php endif; ?>
                 </div>
                 <div class="blog-card__head">
@@ -211,11 +219,15 @@
               <div class="voice-card__inner">
                 <div class="voice-card__wrapper">
                   <div class="voice-card__image js-colorbox">
-                  <?php if(has_post_thumbnail( )): ?>
-                  <?php the_post_thumbnail( ); ?>
-                  <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
-                  <?php endif; ?>
+                    <?php if(has_post_thumbnail()): ?>
+                        <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                            srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                    <?php the_post_thumbnail_url('large'); ?> 1024w"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                            alt="">
+                    <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
+                    <?php endif; ?>
                   </div>
                   <div class="voice-card__head">
                     <div class="voice-card__meta">

@@ -4,8 +4,8 @@
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture>
-        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" media="(max-width: 767px)" >
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img.jpg" alt="上空からとらえたゴルフコースの全容">
+        <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img_sp.jpg" media="(max-width: 767px)" >
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact-img_pc.jpg" alt="上空からとらえたゴルフコースの全容">
       </picture>
       <div class="sub-mv__header js-mv-header">
         <h2 class="sub-mv__title" id="text">Contact</h2>

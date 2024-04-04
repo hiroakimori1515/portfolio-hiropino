@@ -22,10 +22,14 @@
             <a href="<?php the_permalink(); ?>" class="popular-posts-card__link">
               <div class="popular-posts-card__inner">
                 <div class="popular-posts-card__image">
-                  <?php if(has_post_thumbnail( )): ?>
-                  <?php the_post_thumbnail( ); ?>
+                  <?php if(has_post_thumbnail()): ?>
+                      <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                          srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                  <?php the_post_thumbnail_url('large'); ?> 1024w"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                          alt="">
                   <?php else: ?>
-                  <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                   <?php endif; ?>
                 </div>
                 <div class="popular-posts-card__body">
@@ -55,10 +59,14 @@
           <li class="sidebar__item">
             <div class="sidebar__voice-card">
               <div class="sidebar__voice-image">
-                <?php if(has_post_thumbnail( )): ?>
-                <?php the_post_thumbnail( ); ?>
+                <?php if(has_post_thumbnail()): ?>
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                        srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                <?php the_post_thumbnail_url('large'); ?> 1024w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                        alt="">
                 <?php else: ?>
-                <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                 <?php endif; ?>
               </div>
               <div class="sidebar__voice-body">
@@ -96,10 +104,14 @@
           <li class="sidebar__item">
             <div class="campaign-card">
               <div class="campaign-card__image">
-                <?php if(has_post_thumbnail( )): ?>
-                <?php the_post_thumbnail( ); ?>
+                <?php if(has_post_thumbnail()): ?>
+                    <img src="<?php the_post_thumbnail_url('medium'); ?>"
+                        srcset="<?php the_post_thumbnail_url('medium'); ?> 768w, 
+                                <?php the_post_thumbnail_url('large'); ?> 1024w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1024px"
+                        alt="">
                 <?php else: ?>
-                <img src="<?php echo get_template_directory_uri( ); ?>/assets/images/common/noimg.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimg.png" alt="">
                 <?php endif; ?>
               </div>
               <div class="campaign-card__inner campaign-card__inner--lower-page">
