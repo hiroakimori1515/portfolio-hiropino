@@ -326,8 +326,8 @@ a {
 
 .about__heading {
 	color: #004c42;
-	font-family: "Gotu", sans-serif;
-	font-size: 2.5rem;
+	font-family: "Libre Baskerville", serif;
+	font-size: 2rem;
 	font-weight: 400;
 	line-height: 1;
 	white-space: nowrap;
@@ -493,7 +493,7 @@ a {
 
 .blog-card__date {
 	display: inline-block;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1;
@@ -597,7 +597,7 @@ a {
 	border: 1px solid #004c42;
 	color: #FFFFFF;
 	display: inline-block;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1;
@@ -623,7 +623,7 @@ a {
 	border: 1px solid #FFFFFF;
 	color: #004c42;
 	display: inline-block;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1;
@@ -980,7 +980,7 @@ a {
 	border: 1px solid #004c42;
 	color: #004c42;
 	display: inline-block;
-	font-family: "Gotu", sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1;
@@ -1271,7 +1271,7 @@ a {
 
 .footer__copyright {
 	color: #FFFFFF;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 0.75rem;
 	font-weight: normal;
 	line-height: 1.5;
@@ -1590,7 +1590,7 @@ textarea {
 	border: 1px solid #004c42;
 	color: #FFFFFF;
 	display: inline-block;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 0.875rem;
 	font-weight: 400;
 	line-height: 1;
@@ -2050,29 +2050,33 @@ body.is-active {
 
 .mv__title {
 	color: #FFFFFF;
-	font-family: "Gentium Book Plus", serif;
-	font-size: 2rem;
-	font-style: italic;
+	font-family: "Libre Baskerville", serif;
+	font-size: 1.5rem;
+	font-style: normal;
 	font-weight: 700;
 	letter-spacing: 0.3em;
 	line-height: 1.2;
+	opacity: 0;
 	text-align: center;
 	text-indent: 0.5em;
 	text-transform: uppercase;
+	transform: translateY(20px);
 	white-space: nowrap;
 }
 
 .mv__subtitle {
 	color: #FFFFFF;
-	font-family: "Gentium Book Plus", serif;
-	font-size: 1.25rem;
-	font-style: italic;
+	font-family: "Libre Baskerville", serif;
+	font-size: 0.75rem;
+	font-style: normal;
 	font-weight: normal;
 	letter-spacing: 0.3em;
 	line-height: 1.65;
+	opacity: 0;
 	text-align: center;
 	text-indent: 0.5em;
 	text-transform: uppercase;
+	transform: translateY(20px);
 }
 
 .mv__swiper {
@@ -2110,7 +2114,7 @@ body.is-active {
 
 .page-404__text {
 	color: #FFFFFF;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
@@ -2163,8 +2167,8 @@ body.is-active {
 
 .page-about__heading {
 	color: #FFFFFF;
-	font-family: "Gotu", sans-serif;
-	font-size: 2.5rem;
+	font-family: "Libre Baskerville", serif;
+	font-size: 2rem;
 	font-weight: 400;
 	left: 1.5rem;
 	line-height: 1;
@@ -2729,7 +2733,7 @@ body.is-active {
 	align-items: center;
 	color: #FFFFFF;
 	display: grid;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 1.125rem;
 	font-weight: normal;
 	justify-content: center;
@@ -2911,7 +2915,7 @@ body.is-active {
 
 .section-header__entitle {
 	color: #0D2936;
-	font-family: "Gotu", sans-serif;
+	font-family: "Libre Baskerville", serif;
 	font-size: 2rem;
 	font-weight: normal;
 	line-height: 1.25;
@@ -3200,10 +3204,11 @@ body.is-active {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 	color: #FFFFFF;
-	font-family: "Noto Sans JP", sans-serif;
-	font-size: 2.5rem;
+	font-family: "Libre Baskerville", serif;
+	font-size: 2rem;
 	font-weight: 400;
 	line-height: 1.2;
+	opacity: 0;
 	text-align: center;
 	white-space: nowrap;
 }
@@ -3664,7 +3669,7 @@ html {
 
 .about__heading {
 	color: #FFFFFF;
-	font-size: 5rem;
+	font-size: 4.5rem;
 	line-height: 1.25;
 	min-width: 25rem;
 	width: 100%;
@@ -4108,12 +4113,12 @@ select {
 }
 
 .mv__title {
-	font-size: 5rem;
+	font-size: 3rem;
 	line-height: 1.25;
 }
 
 .mv__subtitle {
-	font-size: 4rem;
+	font-size: 2rem;
 	letter-spacing: 0.5em;
 }
 
@@ -4188,7 +4193,7 @@ select {
 }
 
 .page-about__heading {
-	font-size: 5rem;
+	font-size: 4.5rem;
 	line-height: 1.25;
 	min-width: 25rem;
 	position: static;
@@ -4456,7 +4461,7 @@ select {
 }
 
 .sub-mv__title {
-	font-size: 4.6875rem;
+	font-size: 3.75rem;
 	line-height: 1.25;
 }
 

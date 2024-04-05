@@ -18,10 +18,10 @@
 }
 
 .mv__title {
-  font-size: rem(32);
+  font-size: rem(24);
   font-weight: $bold;
-  font-family: $forth-font-family;
-  font-style: italic;
+  font-family: $second-font-family;
+  font-style: normal;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.3em;
@@ -29,25 +29,29 @@
   text-indent: 0.5em;
   color: $base;
   white-space: nowrap;
+  opacity: 0;
+  transform: translateY(20px);
   @include mq('md') {
-    font-size: rem(80);
+    font-size: rem(48);
     line-height: 1.25;
   }
 }
 
 .mv__subtitle {
-  font-size: rem(20);
+  font-size: rem(12);
   font-weight: normal;
-  font-style: italic;
-  font-family: $forth-font-family;
+  font-style: normal;
+  font-family: $second-font-family;
   text-transform: uppercase;
   line-height: 1.65;
   text-indent: 0.5em;
   letter-spacing: 0.3em;
   text-align: center;
   color: $base;
+  opacity: 0;
+  transform: translateY(20px);
   @include mq('md') {
-    font-size: rem(64);
+    font-size: rem(32);
     letter-spacing: 0.5em;
   }
 }

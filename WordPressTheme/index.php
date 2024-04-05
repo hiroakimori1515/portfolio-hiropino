@@ -8,8 +8,8 @@
     <div class="mv js-mv">
       <div class="mv__inner">
         <div class="mv__header js-mv-header">
-          <h2 class="mv__title">Mirage Beach</h2>
-          <p class="mv__subtitle">Golf Links</p>
+          <h2 class="mv__title text">Mirage Beach</h2>
+          <p class="mv__subtitle text">Golf Links</p>
         </div>
         <div class="mv__swiper swiper js-mv-swiper">
           <div class="swiper-wrapper">

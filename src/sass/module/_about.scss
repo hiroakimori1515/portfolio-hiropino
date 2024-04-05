@@ -97,14 +97,14 @@
 }
 
 .about__heading {
-  font-size: rem(40);
+  font-size: rem(32);
   font-family: $second-font-family;
   font-weight: $normal;
   line-height: 1;
   color: $main;
   white-space: nowrap;
   @include mq('md') {
-    font-size: rem(80);
+    font-size: rem(72);
     line-height: 1.25;
     color: $base;
     min-width: rem(400);

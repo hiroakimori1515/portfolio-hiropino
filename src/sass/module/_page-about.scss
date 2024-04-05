@@ -104,7 +104,7 @@
   top: rem(-240);
   left: rem(24);
   min-width: rem(200);
-  font-size: rem(40);
+  font-size: rem(32);
   font-family: $second-font-family;
   font-weight: $normal;
   line-height: 1;
@@ -112,7 +112,7 @@
   white-space: nowrap;
   @include mq('md') {
     position: static;
-    font-size: rem(80);
+    font-size: rem(72);
     line-height: 1.25;
     min-width: rem(400);
     width: 100%;

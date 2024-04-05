@@ -15,6 +15,13 @@ function enqueue_styles_and_scripts() {
     wp_register_style('google-font-gentium-book-plus', 'https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     wp_enqueue_style('google-font-gentium-book-plus');
 
+    // Google Font - Zen Old Mincho
+    wp_register_style('google-font-zen-old-mincho', 'https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap');
+    wp_enqueue_style('google-font-zen-old-mincho');
+
+    // Google Font - Libre Baskerville
+    wp_enqueue_style('google-font-libre-baskerville', 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap', array(), null, 'all');
+
     // Google Font - Noto Sans JP
     wp_register_style('google-font-noto-sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
     wp_enqueue_style('google-font-noto-sans');
