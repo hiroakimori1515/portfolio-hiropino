@@ -526,7 +526,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // SplitType
-  const text = new SplitType('#text');
+  // ドキュメントが完全に読み込まれてから実行
+  document.addEventListener('DOMContentLoaded', function() {
+    const text = new SplitType('#text');
+  });
+
+  // または、ドキュメントの読み込み状態を確認せずに即時に実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      const text = new SplitType('#text');
+    });
+  } else {
+    const text = new SplitType('#text');
+  }
+
 
   // GSAP アニメーション
   gsap.to(".char", {

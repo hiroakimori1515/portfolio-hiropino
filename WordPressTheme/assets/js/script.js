@@ -545,7 +545,19 @@ jQuery(function ($) {
   });
 
   // SplitType
-  var text = new SplitType('#text');
+  // ドキュメントが完全に読み込まれてから実行
+  document.addEventListener('DOMContentLoaded', function () {
+    var text = new SplitType('#text');
+  });
+
+  // または、ドキュメントの読み込み状態を確認せずに即時に実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      var text = new SplitType('#text');
+    });
+  } else {
+    var text = new SplitType('#text');
+  }
 
   // GSAP アニメーション
   gsap.to(".char", {
