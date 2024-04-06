@@ -2809,10 +2809,14 @@ body.is-active {
 }
 
 .popular-posts-card__title {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: normal;
+	overflow: hidden;
 }
 
 .price {

@@ -6,7 +6,6 @@
       <div class="sidebar__body">
         <ul class="sidebar__items">
           <?php
-            setPostViews(get_the_ID());
             $args = array(
               'post_type' => 'post',
               'meta_key' => 'post_views_count',

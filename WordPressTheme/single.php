@@ -14,12 +14,9 @@
 <!-- パンくず -->
  <?php get_template_part('parts/breadcrumb') ?>
 
- <?php
-    // 記事のビュー数を更新(ログイン中・クローラーは除外)
-    if (!is_user_logged_in()) {
-      setPostViews(get_the_ID());
-    }
-  ?>
+ <?php if (!is_user_logged_in() && !is_robots()) {
+  setPostViews(get_the_ID());
+}?>
  <main>
   <?php if (have_posts(  )): ?>
     <?php while(have_posts(  )): ?>

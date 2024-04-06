@@ -61,4 +61,8 @@
   font-weight: 500;
   font-family: $base-font-family;
   line-height: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
