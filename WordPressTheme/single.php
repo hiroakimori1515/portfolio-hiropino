@@ -16,7 +16,7 @@
 
  <?php
     // 記事のビュー数を更新(ログイン中・クローラーは除外)
-    if (!is_user_logged_in() && !is_robots()) {
+    if (!is_user_logged_in()) {
       setPostViews(get_the_ID());
     }
   ?>

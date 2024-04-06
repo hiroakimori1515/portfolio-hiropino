@@ -1,8 +1,5 @@
 <?php
 function enqueue_styles_and_scripts() {
-    // Favicon
-    wp_enqueue_style('site-favicon', get_theme_file_uri('/assets/images/common/favicon.svg'), array(), null, 'all');
-
     // Google Font - Gotu
     wp_register_style('google-font-gotu', 'https://fonts.googleapis.com/css2?family=Gotu&display=swap');
     wp_enqueue_style('google-font-gotu');
@@ -36,6 +33,15 @@ function enqueue_styles_and_scripts() {
     // 自身のCSS
     wp_enqueue_style('custom-css', get_theme_file_uri('/assets/css/style.css'), array(), null, 'all');
 }
+
+ // Favicon
+function mytheme_add_favicon() {
+  // ファビコンのURLを指定
+  $favicon_url = get_theme_file_uri('/assets/images/common/favicon.svg');
+  echo '<link rel="icon" href="' . esc_url($favicon_url) . '" type="image/svg+xml">';
+}
+add_action('wp_head', 'mytheme_add_favicon');
+
 
 // スクリプトの追加
 function enqueue_custom_scripts() {
