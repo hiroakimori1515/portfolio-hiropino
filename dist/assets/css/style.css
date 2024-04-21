@@ -2001,36 +2001,6 @@ body.is-active {
 	width: 100%;
 }
 
-.loading {
-	align-items: center;
-	background-color: #FFFFFF;
-	bottom: 0;
-	display: grid;
-	justify-items: center;
-	left: 0;
-	place-items: center;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 9999;
-}
-
-.loading-screen {
-	background-color: #ebebeb;
-	bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	transform: translateY(100vh);
-	z-index: 9998;
-}
-
-.loading p {
-	font-family: "Gentium Book Plus", serif;
-	font-size: 2rem;
-}
-
 .mv {
 	height: 100vh;
 	position: relative;

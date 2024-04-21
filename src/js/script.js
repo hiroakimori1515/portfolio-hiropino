@@ -305,35 +305,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  window.addEventListener('load', () => {
-    const loadingAreaGray = document.querySelector('.loading');
-    const loadingAreaGreen = document.querySelector('.loading-screen');
-    const loadingText = document.querySelector('.loading p');
-  
-    // ローディング中（グレースクリーン）のアニメーション
-    if (loadingAreaGray) {
-      loadingAreaGray.animate(
-        { opacity: [1, 0], visibility: 'hidden' },
-        { duration: 2000, delay: 1200, easing: 'ease', fill: 'forwards' }
-      );
-    }
-  
-    // ローディング中（薄緑スクリーン）のアニメーション
-    if (loadingAreaGreen) {
-      loadingAreaGreen.animate(
-        { translate: ['0 100vh', '0 0', '0 -100vh'] },
-        { duration: 2000, delay: 800, easing: 'ease', fill: 'forwards' }
-      );
-    }
-  
-    // ローディング中テキストのアニメーション
-    if (loadingText) {
-      loadingText.animate(
-        [{ opacity: 1, offset: 0 }, { opacity: 1, offset: 0.8 }, { opacity: 0, offset: 1 }],
-        { duration: 1200, easing: 'ease', fill: 'forwards' }
-      );
-    }
-  });
   // voice-card__wrapperの高さ揃える
   function adjustCardWrapperHeight() {
     let wrappers = document.querySelectorAll('.voice-card__wrapper');
@@ -543,30 +514,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //.textを1.5秒かけ出現させ1.5秒かけ逆再生させ初期状態に戻す
-gsap.to(".text", {
-  delay: 2, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
-  duration: 1.5, //アニメーションの時間の設定
-  opacity: 1, //表示状態の指定
-  y: "0px", //cssでY軸-20pxから完了時0pxへの指定
-  yoyo: true, //trueにすることで上記で指定したY軸の動きの逆再生
-  repeat: 1, //yoyoのリピート回数
-  //同じclass名のバリデーションの設定
-  stagger: {
-    each: 0.5, //ディレイ時間
-  },
-});
+  gsap.to(".text", {
+    delay: 0.5, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
+    duration: 1.5, //アニメーションの時間の設定
+    opacity: 1, //表示状態の指定
+    y: "0px", //cssでY軸-20pxから完了時0pxへの指定
+    yoyo: true, //trueにすることで上記で指定したY軸の動きの逆再生
+    repeat: 1, //yoyoのリピート回数
+    //同じclass名のバリデーションの設定
+    stagger: {
+      each: 0.5, //ディレイ時間
+    },
+  });
 
-//初期遅延3.5秒かけてから.titleを表示
-gsap.to(".text", {
-  delay: 6.5, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
-  duration: 3, //アニメーションの時間の設定
-  opacity: 1, //表示状態の指定
-  //同じclass名のバリデーションの設定
-  stagger: {
-    each: 0.2, //ディレイ時間
-    from: "start", //出現方法の指定
-  },
-});
+  //初期遅延3.5秒かけてから.titleを表示
+  gsap.to(".text", {
+    delay: 5, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
+    duration: 3, //アニメーションの時間の設定
+    opacity: 1, //表示状態の指定
+    //同じclass名のバリデーションの設定
+    stagger: {
+      each: 0.2, //ディレイ時間
+      from: "start", //出現方法の指定
+    },
+  });
 
 
 

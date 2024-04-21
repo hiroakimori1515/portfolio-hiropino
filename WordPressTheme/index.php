@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 <main>
-    <div class="loading">
-      <p>Loading...</p>
-      <div class="loading-screen"></div>
-    </div>
-
     <div class="mv js-mv">
       <div class="mv__inner">
         <div class="mv__header js-mv-header">
