@@ -104,7 +104,7 @@ if (!is_404() && !is_page('contact') && !is_page('thanks')) {
         </ul>
       </nav>
       <div class="footer__copyright">
-        <small>&copy; 2023 - 2024 Portfolio-Hiropino WebCoder. All Rights Reserved.</small>
+        <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
       </div>
     </div>
   </footer>
