@@ -3727,6 +3727,7 @@ html {
 }
 
 .blog::before {
+	background-attachment: fixed;
 	background-image: url(../images/common/blog-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
