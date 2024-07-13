@@ -15,6 +15,12 @@
         <a href="<?php echo esc_url( home_url( '/' ) );?>"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/MirageBeach_logo.png" alt="CodeUpsのロゴ画像"></a>
       </h1>
 
+      <div class="header__login">
+        <a href="#">
+          <div class="pc-nav__item-login">会員ログイン</div>
+        </a>
+      </div>
+
       <div class="header__drawer hamburger js-hamburger">
         <span></span>
         <span></span>
@@ -22,16 +28,61 @@
       </div>
 
       <nav class="header__pc-nav pc-nav">
-        <?php
-          wp_nav_menu(
-            array(
-              'depth' => '1',
-              'theme_location' => 'global',
-              'container' => 'false',
-              'menu_class' => 'pc-nav__items',
-            )
-            );
-         ?>
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/campaign/' ) );?>">
+              <div class="pc-nav__item-entitle">Campaign</div>
+              <div class="pc-nav__item-jatitle">キャンペーン</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/about/' ) );?>">
+              <div class="pc-nav__item-entitle">About us</div>
+              <div class="pc-nav__item-jatitle">私たちについて</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/information/' ) );?>">
+              <div class="pc-nav__item-entitle">Information</div>
+              <div class="pc-nav__item-jatitle">ダイビング情報</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/blog/' ) );?>">
+              <div class="pc-nav__item-entitle">Blog</div>
+              <div class="pc-nav__item-jatitle">ブログ</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/voice/' ) );?>">
+              <div class="pc-nav__item-entitle">Voice</div>
+              <div class="pc-nav__item-jatitle">お客様の声</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/price/' ) );?>">
+              <div class="pc-nav__item-entitle">Price</div>
+              <div class="pc-nav__item-jatitle">料金一覧</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/faq/' ) );?>">
+              <div class="pc-nav__item-entitle">FAQ</div>
+              <div class="pc-nav__item-jatitle">よくある質問</div>
+            </a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="<?php echo esc_url( home_url( '/contact/' ) );?>">
+              <div class="pc-nav__item-entitle">Contact</div>
+              <div class="pc-nav__item-jatitle">お問合せ</div>
+            </a>
+          </li>
+          <li class="pc-nav__item pc-nav__item--login">
+            <a href="#">
+              <div class="pc-nav__item-login">会員ログイン</div>
+            </a>
+          </li>
+        </ul>
       </nav>
 
       <nav class="header__sp-nav sp-nav js-sp-nav">

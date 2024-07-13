@@ -20,7 +20,6 @@
   height: inherit;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding-right: $padding-sp;
   padding-left: $padding-sp;
@@ -41,7 +40,23 @@
   }
 }
 
+.header__login {
+  margin-left: auto;
+  height: rem(32);
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 0 min(0.9vw, rem(20));
+  width: rem(120);
+  background-color: #ecc77c;
+  @include mq('md') {
+    display: none;
+  }
+}
+
 .header__drawer {
+  margin-left: rem(16);
   @include mq('md') {
     display: none;
   }
@@ -52,6 +67,7 @@
   display: none;
   @include mq('md') {
     display: block;
+    margin-left: auto;
   }
 }
 

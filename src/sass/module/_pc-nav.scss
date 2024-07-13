@@ -48,7 +48,7 @@
   place-content: center;
   place-items: center;
   text-align: center;
-  padding: 0 min(1.4vw, rem(20));
+  padding: 0 min(0.9vw, rem(8));
   width: 100%;
   font-size: rem(18);
   font-weight: normal;
@@ -57,10 +57,37 @@
   color: $base;
 }
 
+.pc-nav__item.pc-nav__item--login {
+  margin-left: rem(16);
+}
+
+.pc-nav__item.pc-nav__item--login a {
+  height: rem(40);
+  margin-top: rem(24);
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 0 min(0.9vw, rem(8));
+  width: 100%;
+  background-color: #ecc77c;
+}
+
 .pc-nav__item-jatitle {
   font-size: rem(10);
   font-weight: normal;
   font-family: $base-font-family;
   line-height: 1.5;
   color: $base;
+}
+
+.pc-nav__item-login {
+  font-size: rem(12);
+  font-weight: normal;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  color: $font;
+  @include mq('md') {
+    font-size: rem(14);
+  }
 }
