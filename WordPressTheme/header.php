@@ -16,7 +16,7 @@
       </h1>
 
       <div class="header__login">
-        <a href="#">
+        <a href="#" class="shiny">
           <div class="pc-nav__item-login">会員ログイン</div>
         </a>
       </div>
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li class="pc-nav__item pc-nav__item--login">
-            <a href="#">
+            <a href="#" class="shiny">
               <div class="pc-nav__item-login">会員ログイン</div>
             </a>
           </li>

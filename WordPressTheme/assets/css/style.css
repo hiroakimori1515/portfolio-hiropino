@@ -1886,6 +1886,10 @@ body.is-active {
 }
 
 .header__login {
+	margin-left: auto;
+}
+
+.header__login a {
 	align-content: center;
 	align-items: center;
 	background-color: #ecc77c;
@@ -1893,12 +1897,20 @@ body.is-active {
 	height: 2rem;
 	justify-content: center;
 	justify-items: center;
-	margin-left: auto;
 	padding: 0 min(0.9vw, 1.25rem);
 	place-content: center;
 	place-items: center;
 	text-align: center;
 	width: 7.5rem;
+}
+
+.header__login a.shiny {
+	animation: shine 20s infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	background: #ecc77c;
+	background: linear-gradient(-45deg, #ecc77c 50%, #f9edd5 60%, #ecc77c 70%);
+	background-size: 600% 100%;
 }
 
 .header__drawer {
@@ -2684,16 +2696,15 @@ body.is-active {
 	justify-content: center;
 }
 
-.pc-nav__items li a {
+.pc-nav__item a {
 	position: relative;
 }
 
-.pc-nav__items li.pc-nav__item a,
-.pc-nav__items li a:hover {
+.pc-nav__item a:hover {
 	color: #FFFFFF;
 }
 
-.pc-nav__items li a::after {
+.pc-nav__item a::after {
 	background: #FFFFFF;
 	bottom: 1rem;
 	content: "";
@@ -2706,9 +2717,31 @@ body.is-active {
 	width: 80%;
 }
 
+.pc-nav__item.pc-nav__item--login a::after {
+	background-color: #FFFFFF;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -1;
+}
+
+.pc-nav__item.pc-nav__item--login a:hover::after {
+	transform: scale(1, 1);
+}
+
+.pc-nav__item.pc-nav__item--login a:hover .pc-nav__item-login {
+	color: #004c42;
+}
+
 /*現在地とhoverの設定*/
 
-.pc-nav__items li a:hover::after {
+.pc-nav__item a:hover::after {
 	transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
@@ -2751,8 +2784,19 @@ body.is-active {
 	padding: 0 min(0.9vw, 0.5rem);
 	place-content: center;
 	place-items: center;
+	position: relative;
 	text-align: center;
 	width: 100%;
+	z-index: 1;
+}
+
+.pc-nav__item.pc-nav__item--login a.shiny {
+	animation: shine 20s infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	background: #ecc77c;
+	background: linear-gradient(-45deg, #ecc77c 50%, #f9edd5 60%, #ecc77c 70%);
+	background-size: 600% 100%;
 }
 
 .pc-nav__item-jatitle {
@@ -4091,7 +4135,7 @@ select {
 	width: 10.9375rem;
 }
 
-.header__login {
+.header__login a {
 	display: none;
 }
 
@@ -4662,6 +4706,38 @@ html {
 
 100% {
 	transform: translateX(0);
+}
+
+}
+
+@keyframes shine {
+
+0% {
+	background-position-x: 400%;
+}
+
+50% {
+	background-position-x: 0%;
+}
+
+100% {
+	background-position-x: -400%;
+}
+
+}
+
+@keyframes shine {
+
+0% {
+	background-position-x: 400%;
+}
+
+50% {
+	background-position-x: 0%;
+}
+
+100% {
+	background-position-x: -400%;
 }
 
 }

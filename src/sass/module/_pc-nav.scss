@@ -7,16 +7,15 @@
   height: inherit;
 }
 
-.pc-nav__items li a {
+.pc-nav__item a {
   position: relative;
 }
 
-.pc-nav__items li.pc-nav__item a,
-.pc-nav__items li a:hover {
+.pc-nav__item a:hover {
   color: $base;
 }
 
-.pc-nav__items li a::after {
+.pc-nav__item a::after {
   content: '';
   /*絶対配置で線の位置を決める*/
   position: absolute;
@@ -32,9 +31,31 @@
   transform-origin: center top;/*上部中央基点*/
 }
 
+.pc-nav__item.pc-nav__item--login a::after {
+  content: "";
+  position: absolute;
+  background-color: $base;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -1;
+}
+
+.pc-nav__item.pc-nav__item--login a:hover::after {
+  transform: scale(1, 1);
+}
+
+.pc-nav__item.pc-nav__item--login a:hover .pc-nav__item-login {
+  color: $main;
+}
+
 /*現在地とhoverの設定*/
 // .pc-nav__items li.pc-nav__item a::after,
-.pc-nav__items li a:hover::after {
+.pc-nav__item a:hover::after {
   transform: scale(1, 1);/*X方向にスケール拡大*/
 }
 
@@ -62,6 +83,8 @@
 }
 
 .pc-nav__item.pc-nav__item--login a {
+  position: relative;
+  z-index: 1;
   height: rem(40);
   margin-top: rem(24);
   display: grid;
@@ -71,6 +94,31 @@
   padding: 0 min(0.9vw, rem(8));
   width: 100%;
   background-color: #ecc77c;
+  &.shiny {
+    background: #ecc77c;
+    background: linear-gradient(
+      -45deg,
+      #ecc77c 50%,
+      lighten(#ecc77c, 20%) 60%,
+      #ecc77c 70%
+    );
+    background-size: 600% 100%;
+    animation: shine 20s infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: 400%;
+  }
+  50% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: -400%;
+  }
 }
 
 .pc-nav__item-jatitle {
