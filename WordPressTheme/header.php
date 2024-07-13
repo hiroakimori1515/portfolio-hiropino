@@ -17,7 +17,7 @@
 
       <div class="header__login">
         <a href="#" class="shiny">
-          <div class="pc-nav__item-login">会員ログイン</div>
+          <div class="header__login-item">会員ログイン</div>
         </a>
       </div>
 

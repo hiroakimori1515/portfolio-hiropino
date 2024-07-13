@@ -1900,8 +1900,10 @@ body.is-active {
 	padding: 0 min(0.9vw, 1.25rem);
 	place-content: center;
 	place-items: center;
+	position: relative;
 	text-align: center;
 	width: 7.5rem;
+	z-index: 1;
 }
 
 .header__login a.shiny {
@@ -1911,6 +1913,36 @@ body.is-active {
 	background: #ecc77c;
 	background: linear-gradient(-45deg, #ecc77c 50%, #f9edd5 60%, #ecc77c 70%);
 	background-size: 600% 100%;
+}
+
+.header__login a::after {
+	background-color: #FFFFFF;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: scale(0, 1);
+	transform-origin: left top;
+	transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+	width: 100%;
+	z-index: -1;
+}
+
+.header__login a:hover::after {
+	transform: scale(1, 1);
+}
+
+.header__login a:hover .header__login-item {
+	color: #004c42;
+}
+
+.header__login-item {
+	color: #0D2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	font-weight: normal;
+	line-height: 1.5;
 }
 
 .header__drawer {
