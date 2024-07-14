@@ -16,7 +16,7 @@
       </h1>
 
       <div class="header__login">
-        <a href="#" class="shiny">
+        <a href=<?php echo esc_url( home_url( '/membership-login/' ) );?>" class="shiny">
           <div class="header__login-item">会員ログイン</div>
         </a>
       </div>
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li class="pc-nav__item pc-nav__item--login">
-            <a href="#" class="shiny">
+            <a href="<?php echo esc_url( home_url( '/membership-login/' ) );?>" class="shiny">
               <div class="pc-nav__item-login">会員ログイン</div>
             </a>
           </li>
