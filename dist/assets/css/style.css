@@ -2498,6 +2498,10 @@ body.is-active {
 	display: none;
 }
 
+.page-membership-form .page-membership-form__inner {
+	max-width: 18.4375rem;
+}
+
 .page-price__inner {
 	max-width: 37.5rem;
 }
