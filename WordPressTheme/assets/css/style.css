@@ -2502,6 +2502,63 @@ body.is-active {
 	max-width: 18.4375rem;
 }
 
+.swpm-login-widget-form input {
+	width: 100%;
+}
+
+tr.swpm-registration-firstname-row {
+	display: none;
+}
+
+tr.swpm-registration-lastname-row {
+	display: none;
+}
+
+.swpm-login-form-submit.swpm-submit-btn-default-style {
+	background-color: #004c42; /* $main の値に置き換え */
+	border: 1px solid #004c42; /* $main の値に置き換え */
+	color: #FFFFFF; /* $base の値に置き換え */
+	display: inline-block;
+	font-family: "Libre Baskerville", serif; /* $second-font-family の値に置き換え */
+	font-size: 0.875rem; /* rem(14) は使えないのでピクセル値に変更 */
+	font-weight: normal; /* $normal の値に置き換え */
+	line-height: 1;
+	max-width: 11.875rem;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.swpm-pw-reset-submit.swpm-submit-btn-default-style {
+	background-color: #004c42; /* $main の値に置き換え */
+	border: 1px solid #004c42; /* $main の値に置き換え */
+	color: #FFFFFF; /* $base の値に置き換え */
+	display: inline-block;
+	font-family: "Libre Baskerville", serif; /* $second-font-family の値に置き換え */
+	font-size: 0.875rem; /* rem(14) をピクセル値に変更 */
+	font-weight: normal; /* $normal の値に置き換え */
+	line-height: 1;
+	max-width: 16.5rem;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+.swpm-submit.swpm-registration-submit-button.swpm-submit-btn-default-style {
+	background-color: #004c42; /* $main の値に置き換え */
+	border: 1px solid #004c42; /* $main の値に置き換え */
+	color: #FFFFFF; /* $base の値に置き換え */
+	display: inline-block;
+	font-family: "Libre Baskerville", serif; /* $second-font-family の値に置き換え */
+	font-size: 0.875rem; /* rem(14) をピクセル値に変更 */
+	font-weight: normal; /* $normal の値に置き換え */
+	line-height: 1;
+	max-width: 16.5rem;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
 .page-price__inner {
 	max-width: 37.5rem;
 }

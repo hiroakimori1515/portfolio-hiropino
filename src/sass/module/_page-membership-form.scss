@@ -4,3 +4,59 @@
   max-width: rem(295);
 }
 
+.swpm-login-widget-form input {
+  width: 100%;
+}
+
+tr.swpm-registration-firstname-row{
+  display:none;
+}
+
+tr.swpm-registration-lastname-row{
+  display:none;
+}
+
+.swpm-login-form-submit.swpm-submit-btn-default-style {
+  display: inline-block;
+  max-width: rem(190);
+  font-size: rem(14); /* rem(14) は使えないのでピクセル値に変更 */
+  font-family: $second-font-family; /* $second-font-family の値に置き換え */
+  font-weight: normal; /* $normal の値に置き換え */
+  color: $base; /* $base の値に置き換え */
+  line-height: 1;
+  background-color: $main; /* $main の値に置き換え */
+  border: 1px solid $main; /* $main の値に置き換え */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.swpm-pw-reset-submit.swpm-submit-btn-default-style {
+  display: inline-block;
+  max-width: rem(264);
+  font-size: rem(14); /* rem(14) をピクセル値に変更 */
+  font-family: $second-font-family; /* $second-font-family の値に置き換え */
+  font-weight: normal; /* $normal の値に置き換え */
+  color: $base; /* $base の値に置き換え */
+  line-height: 1;
+  background-color: $main; /* $main の値に置き換え */
+  border: 1px solid $main; /* $main の値に置き換え */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.swpm-submit.swpm-registration-submit-button.swpm-submit-btn-default-style {
+  display: inline-block;
+  max-width: rem(264);
+  font-size: rem(14); /* rem(14) をピクセル値に変更 */
+  font-family: $second-font-family; /* $second-font-family の値に置き換え */
+  font-weight: normal; /* $normal の値に置き換え */
+  color: $base; /* $base の値に置き換え */
+  line-height: 1;
+  background-color: $main; /* $main の値に置き換え */
+  border: 1px solid $main; /* $main の値に置き換え */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
